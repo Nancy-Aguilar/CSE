@@ -78,7 +78,7 @@ def grade_calc(percentage):
         return "C"
     elif percentage >= 60:
         return "D"
-    elif percentage >= 50:
+    else:
         return "F"
 
 
