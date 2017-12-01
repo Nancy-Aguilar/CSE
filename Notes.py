@@ -1,5 +1,5 @@
 import random  # This should be on line 1
-print(random.randint(0,100))
+print(random.randint(0, 100))
 
 # print("Hello World")
 #
