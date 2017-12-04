@@ -91,6 +91,7 @@ that "sings" (prints) Happy Birthday
 It must take one paramter called "name"
 '''
 
+
 def happy_bday(name):
     print("Happy birthday to you" + ",")
     print("Happy birthday to you" + ",")
@@ -106,8 +107,6 @@ happy_bday("Jonah")
 for num in range(10):  # This is a four loop
     print(num + 1)
 
-
-
 a = 1
 while a <= 10:
     print(a)
@@ -115,6 +114,24 @@ while a <= 10:
 
 
 # Random Numbers
+
 # import random  # This should be on line 1
 # print(random.randint(0,100))
+
+# Comparisons
+
+print(1 == 1)  # Is 1 equal to 1?
+print(1 != 2)  # Is 1 not equal to 2?
+print(10 <= 15)
+print(not False)
+
+# Recasting
+
+c = '1'
+print(c == 1)
+print(int(c) == 1)  # Both are ints
+print(c == str(1))  # Both are strings
+
+#  The input command ALWAYS gives a string
+
 
