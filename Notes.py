@@ -88,7 +88,7 @@ def grade_calc(percentage):
 ''' Write a function called "happy_bday"
 that "sings" (prints) Happy Birthday
 
-It must take one paramter called "name"
+It must take one parameter called "name"
 '''
 
 
@@ -133,5 +133,3 @@ print(int(c) == 1)  # Both are ints
 print(c == str(1))  # Both are strings
 
 #  The input command ALWAYS gives a string
-
-
