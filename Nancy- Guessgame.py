@@ -1,6 +1,14 @@
-import random
-print(random.randint(1, 50))
+import random # You don't have to put print you need to just have a number
+answer = random.randint(1, 50))
+print(answer)
+turns_left = 5
+guess = int(intput("what is your guess?")) # string 
 
+                   
+                   
+                   
+                   
+                   
 print("Welcome to Guess Game!")
 print("Your goal is to guess the number that I have chosen" + ",")
 print("while doing it under five tries" + ".")
