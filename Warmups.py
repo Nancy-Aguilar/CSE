@@ -30,3 +30,15 @@ def add_py(name):
     print("%s.py" % name)  #Solution 1
     print(name + ".py")  #Solution 2
 
+
+"""Write a function called "add"
+which takes three parameters
+and prints the sum of the numbers
+"""
+
+
+def add(num1, num2, num3):
+    print(num1 + num2 + num3)
+
+
+add(1, 2, 3)
