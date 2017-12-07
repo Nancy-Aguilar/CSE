@@ -26,19 +26,31 @@ example:
 add_py("I_eat") == "I_eat.py"
 """
 
-def add_py(name):
-    print("%s.py" % name)  #Solution 1
-    print(name + ".py")  #Solution 2
+# def add_py(name):
+#     print("%s.py" % name)  #Solution 1
+#     print(name + ".py")  #Solution 2
+#
+#
+# """Write a function called "add"
+# which takes three parameters
+# and prints the sum of the numbers
+# """
+#
+
+# def add(num1, num2, num3):
+#     print(num1 + num2 + num3)
+#
+#
+# add(1, 2, 3)
 
 
-"""Write a function called "add"
-which takes three parameters
-and prints the sum of the numbers
-"""
+def repeat(string):
+    print(string)
+    print(string)
+    print(string)
+
+    for times in range(3):
+        print(string)
 
 
-def add(num1, num2, num3):
-    print(num1 + num2 + num3)
-
-
-add(1, 2, 3)
+repeat("Hello")

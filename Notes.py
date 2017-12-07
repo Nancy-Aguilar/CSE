@@ -132,4 +132,5 @@ print(c == 1)
 print(int(c) == 1)  # Both are ints
 print(c == str(1))  # Both are strings
 
-#  The input command ALWAYS gives a string
+
+#The input command ALWAYS gives a string
