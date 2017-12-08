@@ -44,13 +44,39 @@ add_py("I_eat") == "I_eat.py"
 # add(1, 2, 3)
 
 
-def repeat(string):
-    print(string)
-    print(string)
-    print(string)
+# def repeat(string):
+#     print(string)
+#     print(string)
+#     print(string)
+#
+#     for times in range(3):
+#         print(string)
+#
+#
+# repeat("Hello")
 
-    for times in range(3):
-        print(string)
+"""
+Write a function called "date"
+that takes in three parameters
+"month", "day", and "year" and
+prints out the date, separated by a "/"
+
+example:
+date("12, "8", "17" == "12/8/17"
+Expert mode:
+date(12,8,17) == "12/8/17"
+"""
 
 
-repeat("Hello")
+def date(day, month, year):
+    print(day + "/" + month + "/" + year)
+
+
+date("12", "8", "17")
+
+
+def date(day, month, year):
+    print(str(day) + "/" + str(month) + "/" + str(year))
+
+
+date(12, 8, 17)
