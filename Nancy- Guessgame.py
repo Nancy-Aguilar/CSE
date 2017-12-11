@@ -3,26 +3,25 @@ answer = random.randint(1, 50)
 
 print(answer)
 
-guess = int(input("what is your guess?"))
-
 turns_left = 5
 
-correct_guess = True
+guess = input("what is your guess?")
 
+while turns_left > 0:
 
-if turns_left > 0 and correct_guess == True:
-    if guess == answer:
-        print("You win!!!")
+    if guess == str(answer):
+        print("You win!")
         quit()
 
-correct_guess = False
+    elif guess < str(answer):
+        print("Guess higher")
+        guess = input("What is your guess?")
+        turns_left -= 1
+    elif guess > str(answer):
+        print("Guess lower")
+        guess = input("What is your guess?")
+        turns_left -= 1
 
-if turns_left > 0 and correct_guess == False:
-    if guess > answer:
-        print("It's too high guess lower.")
-        guess = input("Guess again")
-
-    elif guess < answer:
-        print("Its too low guess higher")
-        guess = input("Guess again")
-        
+    elif turns_left == 1:
+        print("You lose")
+        quit()
