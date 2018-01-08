@@ -22,6 +22,6 @@ while turns_left > 0:
         guess = input("What is your guess?")
         turns_left -= 1
 
-    elif turns_left == 1:
+    elif turns_left == 0:
         print("You lose")
         quit()
