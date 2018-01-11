@@ -13,17 +13,20 @@ total = dice1 + dice2
 
 
 while money > 0:
-    dice1 = random.randint(1, 6)
-    dice2 = random.randint(1, 6)
+    money -= 1
+    print("Your current amount is now %s" % money)
+    print("You rolled a %s" % dice1)
+    print("You rolled a %s" % dice2)
+    print("It's %s" % total)
 
 
 if total > 7:
     print("You lose")
 
-if roll < 7:
+if total < 7:
     print("You lose")
 
-if roll == 7:
+if total == 7:
     print("You win")
     money += 5
     print("Your current amount is now %s" % money)
