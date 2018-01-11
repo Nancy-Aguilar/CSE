@@ -9,21 +9,21 @@ print("If you don't roll a 7 you lose the dollar you used to play")
 print("Have fun!")
 
 money = 15
-roll = dice1 + dice2
-if money > 0:
-    money -= 1
-    print("Your current amount is now %s" % money)
-    print("You rolled a %s" % dice1)
-    print("You rolled a %s" % dice2)
-    print("It's %s" % roll)
+total = dice1 + dice2
 
-if dice1 + dice2 > 7:
+
+while money > 0:
+    dice1 = random.randint(1, 6)
+    dice2 = random.randint(1, 6)
+
+
+if total > 7:
     print("You lose")
 
-if dice1 + dice2 < 7:
+if roll < 7:
     print("You lose")
 
-if dice1 + dice2 == 7:
+if roll == 7:
     print("You win")
     money += 5
     print("Your current amount is now %s" % money)
