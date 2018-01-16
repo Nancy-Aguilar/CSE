@@ -13,7 +13,7 @@ while money > 0:
     dice1 = random.randint(1, 6)
     dice2 = random.randint(1, 6)
     total = dice1 + dice2
-    rds = total
+    rounds = total
     print("Your current amount is now %s" % money)
     print("You rolled a %s" % dice1)
     print("You rolled a %s" % dice2)
@@ -26,6 +26,6 @@ while money > 0:
         print("You lose")
     if total < 7:
         print("You lose")
-
-if money == 0:
-    print("You played %s number of rounds")
+    if money == 0:
+        print("Game over, you have no money left to continue playing")
+        print("You played # rounds")
