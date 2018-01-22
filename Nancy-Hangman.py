@@ -1,0 +1,2 @@
+word_bank = ["Diamond", "Believe in yourself", "Pusheen the cat", "Space unicorn", "Chocolate", "Tiger", "Friendship",
+             "No precious jewel can be compared to you", "A blue rose", "Double Rainbow"]
