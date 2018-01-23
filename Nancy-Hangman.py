@@ -8,7 +8,16 @@ str1 = word
 listOne = list(str1)
 print(listOne)
 
-guess = input("What is your guess?")
+guesses_left = 10
 
-if guess == word:
-    print("You win!")
+while guesses_left > 0:
+    letters_guessed = [input("What is your guess?")]
+    guesses_left -= 1
+
+
+    if letters_guessed == word:
+        print("You win!")
+        quit()
+
+    if guesses_left == 0:
+        print("You have no guesses left")
