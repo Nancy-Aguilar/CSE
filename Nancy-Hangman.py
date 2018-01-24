@@ -9,15 +9,10 @@ listOne = list(str1)
 print(listOne)
 
 guesses_left = 10
+letters_guessed = []
 
 while guesses_left > 0:
-    letters_guessed = [input("What is your guess?")]
     guesses_left -= 1
+    guess = input("What is your guess?")
+    letters_guessed.append(guess)
 
-
-    if letters_guessed == word:
-        print("You win!")
-        quit()
-
-    if guesses_left == 0:
-        print("You have no guesses left")
