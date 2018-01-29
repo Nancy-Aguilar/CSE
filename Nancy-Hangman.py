@@ -4,11 +4,11 @@ word_bank = ["Diamond", "Believe in yourself", "Pusheen the cat", "Space unicorn
 
 word = random.choice(word_bank)
 str1 = word
-listOne = list(str1)
+word_list = list(str1)
 guesses_left = 10
 letters_guessed = []
 
-for letter in listOne:
+for letter in word_list:
     print("*")
 
 while guesses_left > 0:
@@ -16,9 +16,5 @@ while guesses_left > 0:
     guess = input("What is your guess?")
     letters_guessed.append(guess)
 
-    if guess == listOne[0]:
+    if guess == word_list[0]:
         print("Yay")
-
-    if guess == word:
-        print("You win!")
-        quit()

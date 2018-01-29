@@ -14,8 +14,8 @@
       <file leaf-file-name="Nancy-Hangman.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nancy-Hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -24,8 +24,8 @@
       <file leaf-file-name="Notes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+            <state relative-caret-position="483">
+              <caret line="140" column="61" lean-forward="true" selection-start-line="140" selection-start-column="61" selection-end-line="140" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="Nancy-Lucky7's.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nancy-Lucky7's.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state relative-caret-position="283">
+              <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -77,9 +77,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Warmups.py" />
-        <option value="$PROJECT_DIR$/Nancy-Lucky7's.py" />
         <option value="$PROJECT_DIR$/Notes.py" />
         <option value="$PROJECT_DIR$/Nancy- Guessgame.py" />
+        <option value="$PROJECT_DIR$/Nancy-Lucky7's.py" />
         <option value="$PROJECT_DIR$/Nancy-Hangman.py" />
       </list>
     </option>
@@ -124,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,6 +135,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -251,8 +251,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.Nancy-Hangman" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Notes" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Nancy-Lucky7's" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Nancy-Lucky7's" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Notes" />
         <item index="3" class="java.lang.String" itemvalue="Python.Nancy- Guessgame" />
         <item index="4" class="java.lang.String" itemvalue="Python.Warmups" />
       </list>
@@ -277,8 +277,8 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22254759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39770868" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -711,24 +711,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Nancy-Lucky7's.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state relative-caret-position="283">
+          <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+        <state relative-caret-position="483">
+          <caret line="140" column="61" lean-forward="true" selection-start-line="140" selection-start-column="61" selection-end-line="140" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nancy-Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="306">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding />
         </state>
       </provider>
