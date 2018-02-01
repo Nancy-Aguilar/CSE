@@ -12,7 +12,7 @@
 # print(6 / 2)
 # print(3 ** 2)
 #
-# print # this makes a new line. In puthon 3.6, it looks like this: print()
+# print # this makes a new line. In python 3.6, it looks like this: print()
 # print("See if you can figure this out")
 # print(5 % 3)
 #
@@ -165,11 +165,11 @@ shopping_list.pop(0)
 print(shopping_list)
 
 # The string class
-import string
-print(string.ascii_letters)
-print(string.ascii_lowercase)
-print(string.punctuation)
-print(string.digits)
+# import string
+# print(string.ascii_letters)
+# print(string.ascii_lowercase)
+# print(string.punctuation)
+# print(string.digits)
 
 # Dealing with strings
 strTwo = "ThIs iS a VeRY oDd sEnTenCE"
