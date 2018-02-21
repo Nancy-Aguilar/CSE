@@ -24,3 +24,30 @@ second_pair = Shoes("Pink", False, "Sketchers")
 print(first_pair.brand)
 print(second_pair.lace_color)
 print(first_pair.clean)
+
+first_pair.wear()
+print(first_pair.clean)
+first_pair.wash()
+print(first_pair.clean)
+
+
+class Cars(object):
+    def __init__(self, color, name, model, horsepower):
+        self.name = name
+        self.color = color
+        self.model = model
+        self.hp = horsepower
+        self.running = False
+
+    def drive_forward(self):
+        if self.running:
+            print("You move forward.")
+        else:
+            print("Nothing Happens.")
+
+    def turn_on(self):
+        if self.running:
+            print("Nothing Happens")
+        else:
+            self.running = True
+            print("You start the car")
