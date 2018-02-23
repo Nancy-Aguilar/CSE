@@ -1,4 +1,15 @@
 class Room(object):
-    def __init__(self, name, things_in_room):
-        self.name_of_room = name
-        self.things_in_room = things_in_room
+    def __init__(self, name, north, south, east, west):
+        self.name = name
+        self.north = north
+        self.south = south
+        self.east = east
+        self.west = west
+
+    def move(self, direction):
+        global current_node
+        current_node = globals()[getattr(self, direction)]
+
+
+# Initialize Rooms
+statue = ("Tree Statue", 'library')
