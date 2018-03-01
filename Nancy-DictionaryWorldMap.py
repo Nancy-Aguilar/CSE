@@ -132,7 +132,7 @@ world_map = {
         }
     },
     'DORMS2': {
-        'NAME': "",
+        'NAME': "Dorms for 2nd years",
         'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North are the 3rd year "
                        "dorms",
         'PATHS': {
@@ -141,7 +141,7 @@ world_map = {
         }
     },
     'DORMS3': {
-        'NAME': "",
+        'NAME': "Dorms for 3rd years",
         'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North are the 4th year "
                        "dorms",
         'PATHS': {
@@ -150,7 +150,7 @@ world_map = {
         }
     },
     'DORMS4': {
-        'NAME': "",
+        'NAME': "Dorms for 4th years",
         'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North is the power "
                        "training room",
         'PATHS': {
