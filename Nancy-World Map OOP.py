@@ -34,123 +34,25 @@ CT2 = ("Combat Training Room #2", "You are inside the combat training room for 2
                                   "office on the West side is the combat training room for 1st years", None, None,
        'OFFICE', 'CT1')
 
-    # 'CT3':
-    #     'NAME': "Combat Training Room 3",
-    #     'DESCRIPTION': "You are inside the combat training room for 3rd years, on the East side is the combat"
-    #                    "training room for 1st years, on the West side are the dorms for 1st years",
-    #     '':
-    #         'WEST': 'DORM1',
-    #         'EAST': 'CT1'
-    #
-    # ,
-    # 'CT4':
-    #     'NAME': "Combat Training Room 4",
-    #     'DESCRIPTION': "You are inside the combat training room for 4th years and up North are the classrooms",
-    #     '':
-    #         'NORTH': 'CLASS',
-    #         'SOUTH': 'CT1'
-    #
-    # ,
-    # 'OFFICE':
-    #     'NAME': "Office",
-    #     'DESCRIPTION': "You are inside the office and facing east is the Nurse's room and facing West is the training "
-    #                    "room for 2nd years",
-    #     '':
-    #         'WEST': 'CT2',
-    #         'EAST': 'NURSE'
-    #
-    # ,
-    # 'NURSE':
-    #     'NAME': "Nurse's Room",
-    #     'DESCRIPTION': "You are inside the Nurse's room and facing east is the Nurse's room and facing North in the "
-    #                    "lounge room and facing West if the office",
-    #     '':
-    #         'WEST': 'OFFICE',
-    #         'NORTH': 'LOUNGE'
-    #
-    # ,
-    # 'LOUNGE':
-    #     'NAME': "Lounge Room",
-    #     'DESCRIPTION': "You're at the lounge room and there's a bag of metals on a sofa, facing West is the cafeteria",
-    #     '':
-    #         'WEST': 'CAFE',
-    #         'SOUTH': 'NURSE'
-    #
-    # ,
-    # 'CAFE':
-    #     'NAME': "Cafeteria",
-    #     'DESCRIPTION': "You are inside the cafeteria with many tables and chairs and some food trays. Facing East is "
-    #                    "the lounge room",
-    #     '':
-    #         'EAST': 'LOUNGE',
-    #
-    # ,
-    # 'DORMS1':
-    #     'NAME': "Dorms for 1st years",
-    #     'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North are the 2nd year "
-    #                    "dorms",
-    #     '':
-    #         'NORTH': 'DORMS2',
-    #         'EAST': 'CT3'
-    #
-    # ,
-    # 'DORMS2':
-    #     'NAME': "Dorms for 2nd years",
-    #     'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North are the 3rd year "
-    #                    "dorms",
-    #     '':
-    #         'NORTH': 'DORMS3',
-    #         'SOUTH': 'DORMS1'
-    #
-    # ,
-    # 'DORMS3':
-    #     'NAME': "Dorms for 3rd years",
-    #     'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North are the 4th year "
-    #                    "dorms",
-    #     '':
-    #         'NORTH': 'DORMS4',
-    #         'SOUTH': 'DORMS2'
-    #
-    # ,
-    # 'DORMS4':
-    #     'NAME': "Dorms for 4th years",
-    #     'DESCRIPTION': "You are inside the dorm building, all the rooms are closed and facing North is the power "
-    #                    "training room",
-    #     '':
-    #         'NORTH': 'PTR',
-    #         'SOUTH': 'DORMS3'
-    #
-    # ,
-    # 'PTR':
-    #     'NAME': "Power Training Room",
-    #     'DESCRIPTION': "You're in the power training room and there is a station for creating items up North and facing"
-    #                    "East is the weapon room",
-    #     '':
-    #         'NORTH': 'STATION',
-    #         'EAST': 'WEAPON',
-    #         'SOUTH': 'DORMS4'
-    #
-    # ,
-    # 'WEAPON':
-    #     'NAME': "Weapon Room",
-    #     'DESCRIPTION': "You're inside the weapon room, there are some swords on the ground and their is an entrance to "
-    #                    "a cave but it's locked and facing South are the classrooms",
-    #     '':
-    #         'WEST': 'PTR',
-    #         'EAST': 'CAVE',
-    #         'SOUTH': 'CLASS'
-    #
-    # ,
-    # 'CLASS':
-    #     'NAME': "Classroom",
-    #     'DESCRIPTION': "You're inside the classrooms and all the rooms are locked facing North is the weapon room",
-    #     '':
-    #         'NORTH': 'WEAPON',
-    #         'SOUTH': 'CT4'
-    #
-    # ,
-    # 'CAVE':
-    #     'NAME': "Cave",
-    #     'DESCRIPTION': "You're inside the cave and according to what others say you could get lost or even die",
-    #     '':
-    #         'WEST': 'WEAPON' 
+current_node = STATUE
+directions = ['north', 'south', 'east', 'west']
+short_directions = ['n', 's', 'e', 'w']
+
+while True:
+    print(current_node[name])
+    print(current_node[descriptions])
+    command = input('>_').lower()
+    if command == 'quit':
+        quit(0)
+    elif command in short_directions:
+        # Look for which command we typed in
+        pos = short_directions.index(command)
+        # Change the command to be the long form
+        command = directions[pos]
+    if command in directions:
+        try:
+           ************
+        except KeyError:
+            print("You cannot go this way.")
+    else:
+        print('Command not recognized')
