@@ -61,28 +61,31 @@ PTR = ("Power Training Room", "You're in the power training room and there is a 
 CREATION = ("Creation Table", "You're standing in front of a table that has four potions, you can create "
                                "anything you want with the right materials, facing East is the weapon room", None,
             'DORMS4', 'WEAPON', None)
-WEAPON = ("Weapon Room", "You're inside the weapon room, there are some swords on the ground and their is an entrance "
-                         "to a cave but it's locked and facing South are the classrooms", None, 'CLASS', None, 'PTR')
+WEAPON = ("Weapon Room", "You're inside the weapon room, there are some swords on the ground and there is an entrance "
+                         "to a cave but it's locked and facing South are the classrooms", None, 'CLASS', 'CP1', 'PTR')
 CLASS = ("Classroom", "You're inside the classrooms and all the rooms are locked facing North is the weapon room",
          'WEAPON', 'CT4', None, None)
+CP1 = ("Cave Place #1", "You're inside the cave and people say that there are many dangerous things inside multiple "
+                        "places in the cave, there's a light leading South and East", None, 'CP7', 'CP2', 'WEAPON')
+CP2 = ("Cave PLace #2", "There is nothing here but a light leading East, South, and West", None, 'CP8', 'CP3', 'CP1')
 
-# CP1 = ("Cave Place #1", "You're inside the cave and people say that there are many dangerous things inside multiple "
-#                         "places in the cave", None, 'CP7', 'CP2', 'WEAPON')
-# CP2 = ("",)
-# CP3 = ("",)
-# CP4 = ("",)
-# CP5 = ("",)
-# CP6 = ("",)
-# CP7 = ("",)
-# CP8 = ("",)
-# CP9 = ("",)
-# CP10 = ("",)
-# CP11 = ("",)
-# CP12 = ("",)
-# CP13 = ("",)
-# CP14 = ("",)
-# CP15 = ("",)
-# TREE = ("",)
+CP3 = ("Cave PLace #3", "There is nothing here but a light leading East, South, and West", None, 'CP6', 'CP4', 'CP2')
+CP4 = ("Cave PLace #4", "There is nothing here but a light leading East, South, and West", None, 'CP8', 'CP3', None)
+CP5 = ("Cave PLace #5", "There is nothing here but a light leading South and West", None, 'CP10', None, 'CP4')
+CP6 = ("Cave PLace #6", "There is nothing here but a light leading North", 'CP3', None, None, None)
+CP7 = ("Cave PLace #7", "There is nothing here but a light leading North, South, and East", 'CP1', 'CP11', 'CP8', None)
+CP8 = ("Cave PLace #8", "There is nothing here but a light leading North, South, and West", 'CP2', 'CP12', None, 'CP7')
+CP9 = ("Cave PLace #9", "There is nothing here but a light leading North, South, and East", 'CP4', 'CP14', 'CP10', None)
+CP10 = ("Cave PLace #10", "There is nothing here but a light leading North, South, and West", 'CP5', 'CP15', None,
+        'CP9')
+CP11 = ("Cave PLace #11", "There is nothing here but a light leading North and East", 'CP7', None, 'CP12', None)
+CP12 = ("Cave PLace #12", "There is nothing here but a light leading North, East, and West", 'CP8', None,
+        'CP13', 'CP11')
+CP13 = ("Cave PLace #13", "There is nothing here but a light leading North, East, and West", 'TREE', None, 'CP14',
+        'Cp12')
+CP14 = ("Cave PLace #14",)
+CP15 = ("Cave PLace #15",)
+TREE = ("Crystal Heart Tree",)
 
 current_node = STATUE
 directions = ['north', 'south', 'east', 'west']
