@@ -83,17 +83,22 @@ CP12 = ("Cave PLace #12", "There is nothing here but a light leading North, East
         'CP13', 'CP11')
 CP13 = ("Cave PLace #13", "There is nothing here but a light leading North, East, and West", 'TREE', None, 'CP14',
         'Cp12')
-CP14 = ("Cave PLace #14",)
-CP15 = ("Cave PLace #15",)
-TREE = ("Crystal Heart Tree",)
+
+CP14 = ("Cave PLace #14", "There is nothing here but a light leading North, East, and West", 'CP9', None, 'CP15',
+        'Cp13')
+CP15 = ("Cave PLace #15", "There is nothing here but a light leading North and West", 'CP10', None, None,
+        'Cp14')
+
+TREE = ("Crystal Heart Tree", "You're standing in front of a big light tree and in it's center it has a crystal heart",
+        None, 'CP13', None, None)
 
 current_node = STATUE
 directions = ['north', 'south', 'east', 'west']
 short_directions = ['n', 's', 'e', 'w']
 
 while True:
-    print(current_node[name])
-    print(current_node[descriptions])
+    print(current_node.name)
+    print(current_node.descriptions)
     command = input('>_').lower()
     if command == 'quit':
         quit(0)
