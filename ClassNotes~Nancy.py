@@ -44,7 +44,7 @@ class Cars(object):
         if self.running:
             print("You move forward.")
         else:
-            print("Nothing Happens.")
+            print("Nothing Happens")
 
     def turn_on(self):
         if self.running:
