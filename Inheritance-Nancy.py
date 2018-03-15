@@ -56,6 +56,6 @@ class Person(object):
         print("%s goes to work" % self.name)
 
 
-class Employee(Person):
-    def __init__(self, name, age):
-        super(Employee, self).__init__(name, age, )
+class Employee(object):
+    def __init__(self, name):
+        self.name = name
