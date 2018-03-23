@@ -41,6 +41,12 @@ class Blackkey(Keys):
         self.name = name
 
 
+class Dromkey(Keys):
+    def __init__(self, name):
+        super(Dromkey, self).__init__()
+        self.name = name
+
+
 class Materials(Item):
     def __init__(self, name):
         super(Materials, self).__init__()
@@ -93,3 +99,23 @@ class Flashlight(Tools):
     def __init__(self, name):
         super(Flashlight, self).__init__()
         self.name = name
+
+
+class Cloths(Item):
+    def __init__(self, name):
+        super(Cloths, self).__init__()
+        self.name = name
+
+
+class Pants(Cloths):
+    def __init__(self, name):
+        super(Pants, self).__init__()
+        self.name = name
+
+
+class Sweater(Cloths):
+    def __init__(self, name):
+        super(Sweater, self).__init__()
+        self.name = name
+
+
