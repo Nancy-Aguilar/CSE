@@ -35,7 +35,7 @@ CT2 = Room("Combat Training Room #2", "You are inside the combat training room f
            'OFFICE', 'CT1')
 CT3 = Room("Combat Training Room #3", "You are inside the combat training room for 3rd years, on the East side is the "
                                       "combat training room for 1st years, on the West side are the dorms for 1st "
-                                      "years", None, None, 'CT1', 'DORM1')
+                                      "years", None, None, 'CT1', 'DORMS1')
 CT4 = Room("Combat Training Room #4", "You are inside the combat training room for 4th years and up North are the "
                                       "classrooms", 'CLASS', 'CT1', None, None)
 OFFICE = Room("Office", "You are inside the office and facing east is the Nurse's room and facing West is the training "
