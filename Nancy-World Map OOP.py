@@ -71,10 +71,9 @@ CP1 = Room("Cave Place #1", "You're inside the cave and people say that there ar
            'WEAPON')
 CP2 = Room("Cave PLace #2", "There is nothing here but a light leading East, South, and West", None, 'CP8', 'CP3',
            'CP1')
-
 CP3 = Room("Cave PLace #3", "There is nothing here but a light leading East, South, and West", None, 'CP6', 'CP4',
            'CP2')
-CP4 = Room("Cave PLace #4", "There is nothing here but a light leading East, South, and West", None, 'CP8', 'CP3', None)
+CP4 = Room("Cave PLace #4", "There's nothing here but a light leading East, South, and West", None, 'CP9', 'CP5', 'CP3')
 CP5 = Room("Cave PLace #5", "There is nothing here but a light leading South and West", None, 'CP10', None, 'CP4')
 CP6 = Room("Cave PLace #6", "There is nothing here but a light leading North", 'CP3', None, None, None)
 CP7 = Room("Cave PLace #7", "There is nothing here but a light leading North, South, and East", 'CP1', 'CP11', 'CP8',
@@ -89,10 +88,10 @@ CP11 = Room("Cave PLace #11", "There is nothing here but a light leading North a
 CP12 = Room("Cave PLace #12", "There is nothing here but a light leading North, East, and West", 'CP8', None, 'CP13',
             'CP11')
 CP13 = Room("Cave PLace #13", "There is nothing here but a light leading North, East, and West", 'TREE', None, 'CP14',
-            'Cp12')
+            'CP12')
 CP14 = Room("Cave PLace #14", "There is nothing here but a light leading North, East, and West", 'CP9', None, 'CP15',
-            'Cp13')
-CP15 = Room("Cave PLace #15", "There is nothing here but a light leading North and West", 'CP10', None, None, 'Cp14')
+            'CP13')
+CP15 = Room("Cave PLace #15", "There is nothing here but a light leading North and West", 'CP10', None, None, 'CP14')
 TREE = Room("Crystal Heart Tree", "You're standing in front of a big light tree and in it's center it has a crystal "
                                   "heart", None, 'CP13', None, None)
 
