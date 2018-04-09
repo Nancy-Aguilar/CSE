@@ -16,7 +16,7 @@ class Room(object):
 # Initialize Rooms
 STATUE = Room("Tree Statue", "You're standing next to a tree statue, it appears to missing a heart shaped object in "
                              "its center, up North is the Library", 'LIBRARY', None, None, None)
-LIBRARY = Room("Library", "You're inside the library, standing in the center and there are two book shelves on the "
+LIBRARY = Room("Library", "You're inside the library, standing in the center and their are two book shelves on the "
                           "West and East side of the library, up North is Combat Training room 1", 'CT1', 'STATUE',
                'BSE2', 'BSE1')
 BSE1 = Room("Book shelves", "You approached the book shelves and they suddenly moved to reveal a secret room", None,
@@ -27,20 +27,20 @@ SECRET1 = Room("Secret Room #1", "You're inside a secret room and the only thing
                                  "ground", None, None, 'BSE1', 'SECRET1')
 SECRET2 = Room("Secret Room #2", "You're inside a secret room and the only thing in there is letter on the ground",
                None, None, 'SECRET2', 'BSE2')
-CT1 = Room("Combat Training Room #1", "You're inside the training room for 1st years, facing West is the training "
-                                      "room for 3rd years facing East is the training room for 2nd years, and North is "
-                                      "the training room for 4th years", 'CT4', 'LIBRARY', 'CT2', 'CT3')
+CT1 = Room("Combat Training Room #1", "You're inside the training room for 1st years, facing West is the training room "
+                                      "for 3rd years, facing East is the training room for 2nd years, and North is the "
+                                      "training room for 4th years", 'CT4', 'LIBRARY', 'CT2', 'CT3')
 CT2 = Room("Combat Training Room #2", "You're inside the combat training room for 2nd years, on the East side is the "
-                                      "office on the West side is the combat training room for 1st years", None, None,
-           'OFFICE', 'CT1')
+                                      "office and on the West side is the combat training room for 1st years", None,
+           None, 'OFFICE', 'CT1')
 CT3 = Room("Combat Training Room #3", "You're inside the combat training room for 3rd years, on the East side is the "
                                       "combat training room for 1st years, on the West side are the dorms for 1st "
                                       "years", None, None, 'CT1', 'DORMS1')
 CT4 = Room("Combat Training Room #4", "You're inside the combat training room for 4th years and up North are the "
                                       "classrooms", 'CLASS', 'CT1', None, None)
-OFFICE = Room("Office", "You're inside the office and facing east is the Nurse's room and facing West is the training "
+OFFICE = Room("Office", "You're inside the office and facing East is the Nurse's room and facing West is the training "
                         "room for 2nd years", None, None, 'NURSE', 'CT2')
-NURSE = Room("Nurse's Room", "You're inside the Nurse's room and facing east is the Nurse's room and facing North is "
+NURSE = Room("Nurse's Room", "You're inside the Nurse's room and facing East is the Nurse's room and facing North is "
                              "the lounge room and facing West is the office", 'LOUNGE', None, None, 'OFFICE')
 LOUNGE = Room("Lounge Room", "You're at the lounge room and there is a bag of carbon on a sofa, facing West is the "
                              "Cafeteria", None, 'NURSE', None, 'CAFE')
@@ -56,7 +56,7 @@ DORMS3 = Room("Dorms for 3rd years", "You're inside a dorm building, all the roo
 
 DORMS4 = Room("Dorms for 4th years", "You're inside a dorm building, all the rooms are closed and facing North is "
                                      "the power training room", 'PTR', 'DORMS3', None, None)
-PTR = Room("Power Training Room", "You're in the power training room and there is a station for creating items up "
+PTR = Room("Power Training Room", "You're in the power training room and their's a station for creating items up "
                                   "North and facing East is the weapon room", 'CREATION', 'DORMS4', 'WEAPON', None)
 CREATION = Room("Creation Table", "You're standing in front of a table that has four potions, you can create anything "
                                   "you want with the right materials, facing East is the weapon room", None, 'DORMS4',
@@ -64,7 +64,7 @@ CREATION = Room("Creation Table", "You're standing in front of a table that has 
 WEAPON = Room("Weapon Room", "You're inside the weapon room, there's a sword and bow/arrow on a table and there is an "
                              "entrance to a cave but it's locked and facing South are the classrooms", None, 'CLASS',
               'CP1', 'PTR')
-CLASS = Room("Classroom", "You're inside the classrooms and all the rooms are locked facing North is the weapon room",
+CLASS = Room("Classroom", "You're inside the classrooms and all the rooms are locked, facing North is the weapon room",
              'WEAPON', 'CT4', None, None)
 CP1 = Room("Cave Place #1", "You're inside the cave and people say that there are many dangerous things inside and "
                             "multiple places in the cave, there's a light leading South and East", None, 'CP7', 'CP2',
