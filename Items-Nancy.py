@@ -4,6 +4,9 @@ class Item(object):
         self.description = description
         self.durability = durability
 
+    def collect(self):
+        print("You collected %s" % self.name)
+
 
 class Weapon(Item):
     def __init__(self, name, description, durability):

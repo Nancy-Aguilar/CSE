@@ -24,9 +24,9 @@ BSE1 = Room("Book shelves", "You approached the book shelves and they suddenly m
 BSE2 = Room("Book shelves", "You approached the book shelves and they suddenly moved to reveal a secret room", None,
             None, 'SECRET2', 'LIBRARY')
 SECRET1 = Room("Secret Room #1", "You're inside a secret room and the only thing in there is a dusty old book on the "
-                                 "ground", None, None, 'BSE1', 'SECRET1')
+                                 "ground", None, None, 'BSE1', None)
 SECRET2 = Room("Secret Room #2", "You're inside a secret room and the only thing in there is letter on the ground",
-               None, None, 'SECRET2', 'BSE2')
+               None, None, None, 'BSE2')
 CT1 = Room("Combat Training Room #1", "You're inside the training room for 1st years, facing West is the training room "
                                       "for 3rd years, facing East is the training room for 2nd years, and North is the "
                                       "training room for 4th years", 'CT4', 'LIBRARY', 'CT2', 'CT3')
@@ -92,7 +92,7 @@ CP13 = Room("Cave PLace #13", "There's nothing here but a light leading North, E
 CP14 = Room("Cave PLace #14", "There's nothing here but a light leading North, East, and West", 'CP9', None, 'CP15',
             'CP13')
 CP15 = Room("Cave PLace #15", "There's nothing here but a light leading North and West", 'CP10', None, None, 'CP14')
-TREE = Room("Crystal Heart Tree", "You're standing in front of a big light tree and in it's center it has a crystal "
+TREE = Room("Crystal Heart Tree", "You're standing in front of a big light tree and in its center it has a crystal "
                                   "heart", None, 'CP13', None, None)
 
 current_node = STATUE
