@@ -93,7 +93,7 @@ class Potions(Materials):
         super(Potions, self).__init__(name, description, durability)
 
     def pour_in_beaker(self):
-        print("You poured in the potion into the beaker")
+        print("You poured in the %s into the beaker" % self.name)
 
 
 class Consumables(Item):
@@ -109,7 +109,7 @@ class Food(Consumables):
         super(Food, self).__init__(name, description, durability)
 
     def eat(self):
-        print("You eat the food")
+        print("You eat the %s" % self.name)
 
 
 class Medkit(Consumables):
@@ -117,7 +117,7 @@ class Medkit(Consumables):
         super(Medkit, self).__init__(name, description, durability)
 
     def use(self):
-        print("You use the Medkit")
+        print("You use the %s" % self.name)
 
 
 class Tools(Item):
@@ -133,7 +133,7 @@ class Flashlight(Tools):
         super(Flashlight, self).__init__(name, description, durability)
 
     def turn_on(self):
-        print("You turn on the flashlight")
+        print("You turn on %s" % self.name)
 
 
 class Cloths(Item):
@@ -149,7 +149,7 @@ class Pants(Cloths):
         super(Pants, self).__init__(name, description, durability)
 
     def put_on(self):
-        print("You put on the pants")
+        print("You put on %s" % self.name)
 
 
 class Sweater(Cloths):
@@ -157,4 +157,4 @@ class Sweater(Cloths):
         super(Sweater, self).__init__(name, description, durability)
 
     def put_on(self):
-        print("You put on the sweater")
+        print("You put on %s" % self.name)
