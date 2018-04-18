@@ -89,11 +89,11 @@ CP12 = Room("Cave PLace #12", "There's nothing here but a light leading North, E
             'CP11')
 CP13 = Room("Cave PLace #13", "There's nothing here but a light leading North, East, and West", 'TREE', None, 'CP14',
             'CP12')
-CP14 = Room("Cave PLace #14", "There's nothing here but a light leading North, East, and West", 'Cp9', None, 'CP15',
+CP14 = Room("Cave PLace #14", "There's nothing here but a light leading North, East, and West", 'CP9', None, 'CP15',
             'CP13')
 CP15 = Room("Cave PLace #15", "There's nothing here but a light leading North and West", 'CP10', None, None, 'CP14')
 TREE = Room("Crystal Heart Tree", "You're standing in front of a big light tree and in its center it has a crystal "
-                                  "heart", None, 'Cp13', None, None)
+                                  "heart", None, 'CP13', None, None)
 
 current_node = STATUE
 directions = ['north', 'south', 'east', 'west']
