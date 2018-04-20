@@ -51,10 +51,11 @@ class Keys(Item):
 
 class CrystalHeart(Keys):
     def __init__(self, name, description, ):
-        super(CrystalHeart, self).__init__(name, description, )
+        super(CrystalHeart, self).__init__(name, description,)
 
     def insert_key(self):
         print("You put the key in")
+
 
 
 class Blackkey(Keys):
