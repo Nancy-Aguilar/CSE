@@ -1,23 +1,18 @@
-class Shoes(object):
-    def __init__(self, name, inventory, abilities, health, status_effects,
-                 physique, description, dialogue, attack, take_damage, defend):
+class Character(object):
+    def __init__(self, name, description, health, inventory, dialogue, attack, take_damage, interact):
         self.name = name
-        self.interact = False
-        self.inventory = inventory
-        self.abilities = abilities
-        self.health = health
-        self.status_effects = status_effects
-        self.physique = physique
         self.description = description
+        self.health = health
+        self.inventory = inventory
         self.dialogue = dialogue
         self.attack = attack
         self.take_damage = take_damage
-        self.defend = defend
+        self.interact = interact
 
-    def interact(self):
+    def collect(self):
         if self.interact:
-            self.interact = True
-            print("You picked up the book")
-        else:
-            print("There's nothing to pick up")
+            print("You collected %s" % self.name)
 
+    def attack(self):
+        if self.attack:
+            print("You attacked")

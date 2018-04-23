@@ -37,7 +37,7 @@ class BowArrow(Weapon):
         print("You shot an arrow")
 
 
-BowArrow = BowArrow('Seimitsuna shotto', 'This bow and arrow can shoot very precise shots to any target you want', '85')
+BowArrow = BowArrow('Seimitsuna Shotto', 'This bow and arrow can shoot very precise shots to any target you want', '85')
 BowArrow.shoot()
 
 

@@ -11,31 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Nancy-World Map OOP.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Nancy-World Map OOP.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Nancy-Characters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nancy-Characters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Nancy-DictionaryWorldMap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nancy-DictionaryWorldMap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3621">
-              <caret line="213" column="39" lean-forward="false" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="39" />
+            <state relative-caret-position="119">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -44,8 +24,48 @@
       <file leaf-file-name="ClassNotes~Nancy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClassNotes~Nancy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="276">
+              <caret line="56" column="24" lean-forward="true" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Items-Nancy.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Items-Nancy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nancy-World Map OOP.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nancy-World Map OOP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="89" column="93" lean-forward="true" selection-start-line="89" selection-start-column="93" selection-end-line="89" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nancy-CYOA.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nancy-DictionaryWorldMap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nancy-DictionaryWorldMap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="213" column="39" lean-forward="false" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -54,7 +74,7 @@
       <file leaf-file-name="Notes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4420">
+            <state relative-caret-position="548">
               <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
               <folding />
             </state>
@@ -74,7 +94,7 @@
       <file leaf-file-name="Inheritance-Nancy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Inheritance-Nancy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
+            <state relative-caret-position="480">
               <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding />
             </state>
@@ -84,28 +104,8 @@
       <file leaf-file-name="Programmer Class-Nancy Aguilar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Programmer Class-Nancy Aguilar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="18" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Items-Nancy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Items-Nancy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="169" column="42" lean-forward="false" selection-start-line="169" selection-start-column="42" selection-end-line="169" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Nancy-CYOA.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,13 +146,13 @@
         <option value="$PROJECT_DIR$/Nancy~DictionaryWorldMap.py" />
         <option value="$PROJECT_DIR$/Notes.py" />
         <option value="$PROJECT_DIR$/Funtions-Nancy.py" />
-        <option value="$PROJECT_DIR$/Nancy-Characters.py" />
         <option value="$PROJECT_DIR$/ClassNotes~Nancy.py" />
-        <option value="$PROJECT_DIR$/Nancy-CYOA.py" />
         <option value="$PROJECT_DIR$/Nancy-DictionaryWorldMap.py" />
-        <option value="$PROJECT_DIR$/Inheritance-Nancy.py" />
         <option value="$PROJECT_DIR$/Programmer Class-Nancy Aguilar.py" />
         <option value="$PROJECT_DIR$/Nancy-World Map OOP.py" />
+        <option value="$PROJECT_DIR$/Inheritance-Nancy.py" />
+        <option value="$PROJECT_DIR$/Nancy-Characters.py" />
+        <option value="$PROJECT_DIR$/Nancy-CYOA.py" />
         <option value="$PROJECT_DIR$/Items-Nancy.py" />
       </list>
     </option>
@@ -352,13 +352,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890995" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890995" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -381,7 +381,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -699,18 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
+    <entry file="file://$PROJECT_DIR$/Programmer Class-Nancy Aguilar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -723,58 +715,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nancy-DictionaryWorldMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="213" column="39" lean-forward="false" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Inheritance-Nancy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
+        <state relative-caret-position="480">
           <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nancy-Characters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Programmer Class-Nancy Aguilar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="18" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ClassNotes~Nancy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="276">
+          <caret line="56" column="24" lean-forward="true" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Items-Nancy.py">
+    <entry file="file://$PROJECT_DIR$/Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nancy-Characters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nancy-DictionaryWorldMap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="169" column="42" lean-forward="false" selection-start-line="169" selection-start-column="42" selection-end-line="169" selection-end-column="42" />
+          <caret line="213" column="39" lean-forward="false" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nancy-World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+        <state relative-caret-position="119">
+          <caret line="89" column="93" lean-forward="true" selection-start-line="89" selection-start-column="93" selection-end-line="89" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Items-Nancy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -4,5 +4,4 @@
 # then with characters
 # and then finally the rooms
 # instantiate
-# controller (change controller
-
+# controller (change controller)
