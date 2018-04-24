@@ -50,28 +50,39 @@ class Keys(Item):
 
 
 class CrystalHeart(Keys):
-    def __init__(self, name, description, ):
-        super(CrystalHeart, self).__init__(name, description,)
+    def __init__(self, name, description, room):
+        super(CrystalHeart, self).__init__(name, description)
+        self.room = room
 
-    def insert_key(self):
-        print("You put the key in")
+    def insert(self):
+        print("You insert the key")
 
+
+CrystalHeart = CrystalHeart('Crystal Heart Key', 'This Crystal heart key is made entirely of crystals and it is a '
+                                                 'heart shaped key', 'TREE')
+CrystalHeart.insert()
 
 
 class Blackkey(Keys):
-    def __init__(self, name, description, ):
-        super(Blackkey, self).__init__(name, description, )
+    def __init__(self, name, description, room):
+        super(Blackkey, self).__init__(name, description,)
+        self.room = room
 
-    def insert_key(self):
-        print("You put the key in")
+    def insert(self):
+        print("You insert the key")
 
 
-class Dromkey(Keys):
-    def __init__(self, name, description, ):
-        super(Dromkey, self).__init__(name, description, )
+Blackkey = Blackkey('Black Key', 'This Black key is a jet black color', 'CAVE')
+Blackkey.insert()
 
-    def insert_key(self):
-        print("You put the key in")
+
+class Dormkey(Keys):
+    def __init__(self, name, description, room ):
+        super(Dormkey, self).__init__(name, description, )
+        self.room = room
+
+    def insert(self):
+        print("You insert the key")
 
 
 class Materials(Item):
