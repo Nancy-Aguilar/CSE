@@ -102,27 +102,11 @@ class Carbon(Materials):
         super(Carbon, self).__init__(name, description)
 
     def pressure(self):
-        print("You put pressure on the carbon and it turned into a diamond")
+        print("You put pressure on the %s and it turned into a diamond" % self.name)
 
 
 Carbon = Carbon('Carbon', 'A small bag size full of carbon')
 Carbon.pressure()
-
-
-class Bookofspells(Materials):
-    def __init__(self, name, description):
-        super(Bookofspells, self).__init__(name, description)
-
-    def spells_page(self):
-        print("You are on the spells page")
-
-
-class Potions(Materials):
-    def __init__(self, name, description):
-        super(Potions, self).__init__(name, description)
-
-    def pour_in_beaker(self):
-        print("You poured in the %s into the beaker" % self.name)
 
 
 class Consumables(Item):
@@ -165,6 +149,10 @@ class Flashlight(Tools):
         print("You turn on %s" % self.name)
 
 
+Flashlight = Flashlight('Flashlight', 'This flashlight is really bright and is battery operated')
+Flashlight.turn_on()
+
+
 class Cloths(Item):
     def __init__(self, name, description):
         super(Cloths, self).__init__(name, description)
@@ -181,9 +169,16 @@ class Pants(Cloths):
         print("You put on %s" % self.name)
 
 
+Pants = Pants('Pants', 'These pants are black colored')
+
+
 class Sweater(Cloths):
     def __init__(self, name, description):
         super(Sweater, self).__init__(name, description)
 
     def put_on(self):
         print("You put on %s" % self.name)
+
+
+Sweater = Sweater('Hoodie', 'This hoodie is grey')
+Sweater.put_on()
