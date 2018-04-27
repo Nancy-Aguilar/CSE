@@ -125,12 +125,19 @@ class Food(Consumables):
         print("You eat the %s" % self.name)
 
 
+Food = Food('Apple', 'This apple is sweet and a nice shade of red')
+
+
 class Medkit(Consumables):
     def __init__(self, name, description):
         super(Medkit, self).__init__(name, description)
 
     def use(self):
         print("You use the %s" % self.name)
+
+
+Medkit = Medkit('Medical Kit', 'This MedKit contains bandages, cloth strips, pain relievers, and rubbing alcohol')
+Medkit.use()
 
 
 class Tools(Item):
