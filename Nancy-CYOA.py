@@ -214,7 +214,7 @@ class Room(object):
         current_node = globals()[getattr(self, direction)]
 
 
-# CHARACTERS GO HERE!!
+# CHARACTERS GO HERE:
 
 
 # north, south, east, west
