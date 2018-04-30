@@ -1,27 +1,36 @@
 class Character(object):
-    def __init__(self, name, description, health, inventory, attack, take_damage, interact):
+    def __init__(self, name, description, health, attack, damage, interact):
         self.name = name
         self.description = description
         self.health = health
-        self.inventory = inventory
+        self.inventory = []
         self.attack = attack
-        self.take_damage = take_damage
+        self.damage = damage
         self.interact = interact
+        self.alive = False
 
-    def collect(self):
-        if self.interact:
-            print("You collected %s" % self.name)
+    def collect(self, item):
+        self.inventory.append(item)
+        print("You collected %s" % self.name)
 
-    def attack(self):
-        if self.attack:
-            print("You attacked")
+    def heath(self):
+        print(self.name.damage)
+        print("You have health")
 
-    def protect(self):
-        if self.take_damage:
-            print("You protected yourself")
+    def take_damage(self):
+        if self.health <= 0:
+            print("%s is already dead" % self.name)
+            return
+        self.health -= 100
+        if self.health <= 0:
+            self.alive = False
+            print("%s died" % self.name)
+
+    def attack(self, target):
+        if self.alive:
+            print("%s attacks %s. %s health is %d. The enemy's health is %d" % (self.name, target.name, self.name,
+                                                                                self.health, target.health))
 
 
-Character1 = Character('name', 'description', '100', 'items', '90', '0', 'interact')
-Character1.collect()
-Character1.attack()
-Character1.protect()
+Character1 = Character("name", "You're wearing casual clothing", 100, 45, 10, None)
+Character2 = Character("Monster", "This monster is very big", 100, 50, 30, None)

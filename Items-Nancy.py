@@ -24,10 +24,6 @@ class Sword(Weapon):
         print("You attacked with %s" % self.name)
 
 
-Sword = Sword('Sōrāsōdo', 'This sword can release sun bolts which can cause quite a lot of damage', '90')
-Sword.attack()
-
-
 class BowArrow(Weapon):
     def __init__(self, name, description, power):
         super(BowArrow, self).__init__(name, description)
@@ -35,10 +31,6 @@ class BowArrow(Weapon):
 
     def shoot(self):
         print("You shot an arrow with %s" % self.name)
-
-
-BowArrow = BowArrow('Seimitsuna Shotto', 'This bow and arrow can shoot very precise shots to any target you want', '85')
-BowArrow.shoot()
 
 
 class Keys(Item):
@@ -58,11 +50,6 @@ class CrystalHeart(Keys):
         print("You insert the %s" % self.name)
 
 
-CrystalHeart = CrystalHeart('Crystal Heart Key', 'This Crystal heart key is made entirely of crystals and it is a '
-                                                 'heart shaped key', 'TREE')
-CrystalHeart.insert()
-
-
 class Blackkey(Keys):
     def __init__(self, name, description, room):
         super(Blackkey, self).__init__(name, description,)
@@ -72,10 +59,6 @@ class Blackkey(Keys):
         print("You insert the %s" % self.name)
 
 
-Blackkey = Blackkey('Black Key', 'This Black key is a jet black color', 'CAVE')
-Blackkey.insert()
-
-
 class Dormkey(Keys):
     def __init__(self, name, description, room):
         super(Dormkey, self).__init__(name, description)
@@ -83,10 +66,6 @@ class Dormkey(Keys):
 
     def insert(self):
         print("You insert the %s" % self.name)
-
-
-Dormkey = Dormkey('Dorm Key', 'This key is for a dorm but it does not have the room number door it opens', 'DORMS1')
-Dormkey.insert()
 
 
 class Materials(Item):
@@ -105,10 +84,6 @@ class Carbon(Materials):
         print("You put pressure on the %s and it turned into a diamond" % self.name)
 
 
-Carbon = Carbon('Carbon', 'A small bag size full of carbon')
-Carbon.pressure()
-
-
 class Consumables(Item):
     def __init__(self, name, description):
         super(Consumables, self).__init__(name, description)
@@ -125,19 +100,12 @@ class Food(Consumables):
         print("You eat the %s" % self.name)
 
 
-Food = Food('Apple', 'This apple is sweet and a nice shade of red')
-
-
 class Medkit(Consumables):
     def __init__(self, name, description):
         super(Medkit, self).__init__(name, description)
 
     def use(self):
         print("You use the %s" % self.name)
-
-
-Medkit = Medkit('Medical Kit', 'This MedKit contains bandages, cloth strips, pain relievers, and rubbing alcohol')
-Medkit.use()
 
 
 class Tools(Item):
@@ -156,10 +124,6 @@ class Flashlight(Tools):
         print("You turn on %s" % self.name)
 
 
-Flashlight = Flashlight('Flashlight', 'This flashlight is really bright and is battery operated')
-Flashlight.turn_on()
-
-
 class Cloths(Item):
     def __init__(self, name, description):
         super(Cloths, self).__init__(name, description)
@@ -176,16 +140,9 @@ class Pants(Cloths):
         print("You put on %s" % self.name)
 
 
-Pants = Pants('Pants', 'These pants are black colored')
-
-
 class Sweater(Cloths):
     def __init__(self, name, description):
         super(Sweater, self).__init__(name, description)
 
     def put_on(self):
         print("You put on %s" % self.name)
-
-
-Sweater = Sweater('Hoodie', 'This hoodie is grey')
-Sweater.put_on()
