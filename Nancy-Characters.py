@@ -32,5 +32,45 @@ class Character(object):
                                                                                 self.health, target.health))
 
 
-Character1 = Character("name", "You're wearing casual clothing", 100, 45, 10, None)
-Character2 = Character("Monster", "This monster is very big", 100, 50, 30, None)
+class Player(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Player, self).__init__(name, description, health, attack, damage, interact)
+
+    def attack(self, target):
+        if self.alive:
+            print("%s attacks %s. %s health is %d. The enemy's health is %d" % (self.name, target.name, self.name,
+                                                                                self.health, target.health))
+
+    def eat(self):
+        print("You eat %s" % self.name)
+
+    def collect(self, item):
+        print("You collect %s" % self.name)
+
+    def drop(self):
+        print("You drop %s" % self.name)
+
+    def create(self):
+        print("You create %s" % self.name)
+
+    def read(self):
+        print("You read %s" % self.name)
+
+    def open(self):
+        print("You open %s" % self.name)
+
+    def close(self):
+        print("You close %s" % self.name)
+
+    def put_on(self):
+        print("You put on %s" % self.name)
+
+
+class Monster(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster, self).__init__(name, description, health, attack, damage, interact)
+
+    def attack(self, target):
+        if self.alive:
+            print("%s attacks %s. %s health is %d. The enemy's health is %d" % (self.name, target.name, self.name,
+                                                                                self.health, target.health))
