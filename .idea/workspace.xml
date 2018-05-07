@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Nancy-Characters.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Nancy-Characters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nancy-Characters.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -24,7 +24,7 @@
       <file leaf-file-name="ClassNotes~Nancy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClassNotes~Nancy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
+            <state relative-caret-position="480">
               <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
@@ -34,8 +34,8 @@
       <file leaf-file-name="Items-Nancy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Items-Nancy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4471">
-              <caret line="263" column="63" lean-forward="false" selection-start-line="263" selection-start-column="63" selection-end-line="263" selection-end-column="63" />
+            <state relative-caret-position="480">
+              <caret line="263" column="63" lean-forward="true" selection-start-line="263" selection-start-column="63" selection-end-line="263" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -44,18 +44,18 @@
       <file leaf-file-name="Nancy-World Map OOP.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nancy-World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="105" column="25" lean-forward="false" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nancy-CYOA.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Nancy-CYOA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="-511">
+              <caret line="51" column="57" lean-forward="true" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -151,9 +151,9 @@
         <option value="$PROJECT_DIR$/Programmer Class-Nancy Aguilar.py" />
         <option value="$PROJECT_DIR$/Inheritance-Nancy.py" />
         <option value="$PROJECT_DIR$/Nancy-World Map OOP.py" />
-        <option value="$PROJECT_DIR$/Nancy-CYOA.py" />
         <option value="$PROJECT_DIR$/Items-Nancy.py" />
         <option value="$PROJECT_DIR$/Nancy-Characters.py" />
+        <option value="$PROJECT_DIR$/Nancy-CYOA.py" />
       </list>
     </option>
   </component>
@@ -197,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -210,6 +209,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,24 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Nancy-Characters">
-    <configuration name="Inheritance-Nancy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CSE" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Inheritance-Nancy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.Nancy-CYOA">
     <configuration name="Items-Nancy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,6 +242,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CSE" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Items-Nancy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Nancy-CYOA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CSE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nancy-CYOA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,18 +316,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Nancy-World Map OOP" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Inheritance-Nancy" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Items-Nancy" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Programmer Class-Nancy Aguilar" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Nancy-Characters" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Items-Nancy" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Programmer Class-Nancy Aguilar" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Nancy-Characters" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Nancy-CYOA" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Nancy-Characters" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Items-Nancy" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Nancy-World Map OOP" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Programmer Class-Nancy Aguilar" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Inheritance-Nancy" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Nancy-CYOA" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Nancy-Characters" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Items-Nancy" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Nancy-World Map OOP" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Programmer Class-Nancy Aguilar" />
       </list>
     </recent_temporary>
   </component>
@@ -730,34 +730,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
+    <entry file="file://$PROJECT_DIR$/Inheritance-Nancy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassNotes~Nancy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="1122">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nancy-World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="25" lean-forward="false" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassNotes~Nancy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Items-Nancy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4471">
-          <caret line="263" column="63" lean-forward="false" selection-start-line="263" selection-start-column="63" selection-end-line="263" selection-end-column="63" />
+        <state relative-caret-position="480">
+          <caret line="263" column="63" lean-forward="true" selection-start-line="263" selection-start-column="63" selection-end-line="263" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -765,15 +765,15 @@
     <entry file="file://$PROJECT_DIR$/Nancy-Characters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <caret line="50" column="90" lean-forward="false" selection-start-line="50" selection-start-column="90" selection-end-line="50" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Inheritance-Nancy.py">
+    <entry file="file://$PROJECT_DIR$/Nancy-CYOA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="-511">
+          <caret line="51" column="57" lean-forward="true" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
           <folding />
         </state>
       </provider>

@@ -12,6 +12,10 @@ class Character(object):
         self.inventory.append(item)
         print("You collected %s" % self.name)
 
+    # def attack(self):
+
+    # def take_damage(self):
+
 
 class Player(Character):
     def __init__(self, name, description, health, attack, damage, interact):
