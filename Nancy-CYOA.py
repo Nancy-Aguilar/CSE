@@ -84,15 +84,6 @@ class Keys(Item):
         print("You dropped the %s" % self.name)
 
 
-class CrystalHeart(Keys):
-    def __init__(self, name, description, room):
-        super(CrystalHeart, self).__init__(name, description)
-        self.room = room
-
-    def insert(self):
-        print("You insert the %s" % self.name)
-
-
 class Blackkey(Keys):
     def __init__(self, name, description, room):
         super(Blackkey, self).__init__(name, description,)
@@ -102,6 +93,10 @@ class Blackkey(Keys):
         print("You insert the %s" % self.name)
 
 
+Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key', 'CAVE')
+Blackkey.insert()
+
+
 class Dormkey(Keys):
     def __init__(self, name, description, room):
         super(Dormkey, self).__init__(name, description)
@@ -109,6 +104,10 @@ class Dormkey(Keys):
 
     def insert(self):
         print("You insert the %s" % self.name)
+
+
+Dormkey = Dormkey('Dorm Key', 'The key to your dorm #16', 'DORMS1')
+Dormkey.insert()
 
 
 class Materials(Item):
@@ -125,6 +124,10 @@ class Carbon(Materials):
 
     def pressure(self):
         print("You put pressure on the %s and it turned into a diamond" % self.name)
+
+
+Carbon = Carbon('Carbon', 'A median size chunck of Carbon')
+Carbon.pressure()
 
 
 class Consumables(Item):
@@ -146,12 +149,20 @@ class Apple(Consumables):
         print("You eat the %s" % self.name)
 
 
+Apple = Apple('Apple', 'red and delicious')
+Apple.eat()
+
+
 class Medkit(Consumables):
     def __init__(self, name, description):
         super(Medkit, self).__init__(name, description)
 
     def use(self):
         print("You use the %s" % self.name)
+
+
+Medkit = Medkit('Medkit', 'Contains bandages, rubbing alcohol, and pain killers')
+Medkit.use()
 
 
 class Tools(Item):
@@ -174,6 +185,11 @@ class Flashlight(Tools):
 
     def turn_off(self):
         print("You turn off the %s" % self.name)
+
+
+Flashlight = Flashlight('Flashlight', 'Shines very bright in the dark')
+Flashlight.turn_on()
+Flashlight.turn_off()
 
 
 class Cloths(Item):
