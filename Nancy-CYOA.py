@@ -214,6 +214,11 @@ class Pants(Cloths):
         print("You take off %s" % self.name)
 
 
+Pants = Pants('Pants', 'color of the pants are black')
+Pants.put_on()
+Pants.take_off()
+
+
 class Sweater(Cloths):
     def __init__(self, name, description):
         super(Sweater, self).__init__(name, description)
@@ -223,6 +228,11 @@ class Sweater(Cloths):
 
     def take_off(self):
         print("You take off %s" % self.name)
+
+
+Sweater = Sweater('Hoodie', 'color of the hoodie is grey')
+Sweater.put_on()
+Sweater.take_off()
 
 
 class Book(Item):
@@ -236,9 +246,9 @@ class Book(Item):
         print("You dropped %s" % self.name)
 
 
-class Bookofspells(Book):
+class Bookofpotions(Book):
     def __init__(self, name, description):
-        super(Bookofspells, self).__init__(name, description)
+        super(Bookofpotions, self).__init__(name, description)
 
     def open(self):
         print("You opened the %s" % self.name)
@@ -248,6 +258,12 @@ class Bookofspells(Book):
 
     def close(self):
         print("You close the %s" % self.name)
+
+
+Bookofpotions = Bookofpotions('Book Of Potions', 'Contains many potions to do many things')
+Bookofpotions.open()
+Bookofpotions.read()
+Bookofpotions.close()
 
 
 class Letters(Item):
@@ -272,6 +288,13 @@ class Sorry(Letters):
         print("The letter says %s" % self.description)
 
 
+Sorry = Sorry('Student 051603A', 'We have been informed that you have lost your magical abilities during the battle '
+                                 'against the Nirads and you have requested to find a way to return your abilities. The'
+                                 'head council have granted you permission to let you use the campus as needed.')
+Sorry.open()
+Sorry.read()
+
+
 class TheTree(Letters):
     def __init__(self, name, description):
         super(TheTree, self).__init__(name, description)
@@ -281,6 +304,12 @@ class TheTree(Letters):
 
     def read(self):
         print("The letter says %s" % self.description)
+
+
+TheTree = TheTree('The Tree', 'The tree is real, they said it was not but it is real. It was not easy to find it and '
+                              'journey was tough but it was worth it, if it meant getting my abilities back.')
+TheTree.open()
+TheTree.read()
 
 
 class Creations(Item):

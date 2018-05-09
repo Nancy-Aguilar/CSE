@@ -12,8 +12,9 @@ class Character(object):
         self.inventory.append(item)
         print("You collected %s" % self.name)
 
-    def attack(self):
-
+    def remove(self, item):
+        self.inventory.remove(item)
+        print("You removed %s from inventory" % self.name)
 
 
 class Player(Character):
@@ -23,28 +24,13 @@ class Player(Character):
     def eat(self):
         print("You eat %s" % self.name)
 
-    def collect(self, item):
-        print("You collect %s" % self.name)
-
-    def drop(self):
-        print("You drop %s" % self.name)
-
-    def create(self):
-        print("You create %s" % self.name)
-
     def read(self):
         print("You read %s" % self.name)
-
-    def open(self):
-        print("You open %s" % self.name)
-
-    def close(self):
-        print("You close %s" % self.name)
-
-    def put_on(self):
-        print("You put on %s" % self.name)
 
 
 class Monster(Character):
     def __init__(self, name, description, health, attack, damage, interact):
         super(Monster, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
