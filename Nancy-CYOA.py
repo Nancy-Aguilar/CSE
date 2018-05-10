@@ -6,6 +6,12 @@
 # instantiate
 # controller (change controller)
 
+# Narrator = na
+
+
+def conprincipal(): # Talking with principal
+    print("Principal: I'm glad that you were able to make it here on time I was just about to leave")
+
 
 class Item(object):
     def __init__(self, name, description):
@@ -266,6 +272,26 @@ Bookofpotions.read()
 Bookofpotions.close()
 
 
+class Bookoflegends(Book):
+    def __init__(self, name, description):
+        super(Bookoflegends, self).__init__(name, description)
+
+    def open(self):
+        print("You opened the %s" % self.name)
+
+    def read(self):
+        print("The book says %s" % self.description)
+
+    def close(self):
+        print("You close the %s" % self.name)
+
+
+Bookoflegends = Bookoflegends('Book Of Legends', 'Contains many legends that were passed down from generations.')
+Bookoflegends.open()
+Bookoflegends.read()
+Bookoflegends.close()
+
+
 class Letters(Item):
     def __init__(self, name, description):
         super(Letters, self).__init__(name, description)
@@ -330,8 +356,13 @@ class Crystalheart(Creations):
     def place_in(self):
         print("You place the % in the tree statue" % self.name)
 
+
+Crystalheart = Crystalheart('Crystal Heart', 'A median sized crystal heart that shines very bright')
+Crystalheart.place_in()
+
+
 ####
-# Characters
+# Characters should be placed here when finished
 ####
 
 
