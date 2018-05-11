@@ -7,10 +7,29 @@
 # controller (change controller)
 
 # Narrator = na
+import time
 
 
-def conprincipal(): # Talking with principal
+def conprincipal():  # Talking with principal
     print("Principal: I'm glad that you were able to make it here on time I was just about to leave")
+    time.sleep(5)
+    print("You: Yeah, it would of been bad if you left, then I wouldn't be able to go anywhere around campus")
+    time.sleep(5)
+    print("Principal: That's true, here is my spare key, now don't lose it and bring it to me tomorrow morning")
+    time.sleep(5)
+    print("You: Ok I will, thanks for lending me your key this will really help me a lot")
+    time.sleep(5)
+    print("Principal: Your welcome and don't ruin the campus, we have school tomorrow")
+    time.sleep(5)
+    print("You: I won't see, you tomorrow morning then bye!")
+    time.sleep(5)
+    print("Principal: Bye")
+
+
+def narration():
+    time.sleep(5)
+    print("You: Time to get my powers back, now where should I go?")
+    time.sleep(5)
 
 
 class Item(object):
@@ -49,8 +68,6 @@ class Sword(Weapon):
 
 
 Sword = Sword('Hinoken', 'the blade of the sword is covered in fire', 40)
-Sword.stab()
-Sword.cut()
 
 
 class BowArrow(Weapon):
@@ -63,7 +80,6 @@ class BowArrow(Weapon):
 
 
 BowArrow = BowArrow('Seimitsuna shotto', 'shoots are always precise', 29)
-BowArrow.shoot()
 
 
 class Axe(Weapon):
@@ -76,7 +92,6 @@ class Axe(Weapon):
 
 
 Axe = Axe('Ono', 'small but durable', 25)
-Axe.swing()
 
 
 class Keys(Item):
@@ -100,7 +115,6 @@ class Blackkey(Keys):
 
 
 Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key', 'CAVE')
-Blackkey.insert()
 
 
 class Dormkey(Keys):
@@ -113,7 +127,17 @@ class Dormkey(Keys):
 
 
 Dormkey = Dormkey('Dorm Key', 'The key to your dorm #16', 'DORMS1')
-Dormkey.insert()
+
+
+class Schoolkey(Keys):
+    def __init__(self, name, description):
+        super(Schoolkey, self).__init__(name, description)
+
+    def insert(self):
+        print("You insert the %s" % self.name)
+
+
+Schoolkey = Schoolkey('Spare Key', 'this key can open an door on campus except the dorms')
 
 
 class Materials(Item):
@@ -133,7 +157,6 @@ class Carbon(Materials):
 
 
 Carbon = Carbon('Carbon', 'A median size chunck of Carbon')
-Carbon.pressure()
 
 
 class Consumables(Item):
@@ -156,7 +179,6 @@ class Apple(Consumables):
 
 
 Apple = Apple('Apple', 'red and delicious')
-Apple.eat()
 
 
 class Medkit(Consumables):
@@ -168,7 +190,6 @@ class Medkit(Consumables):
 
 
 Medkit = Medkit('Medkit', 'Contains bandages, rubbing alcohol, and pain killers')
-Medkit.use()
 
 
 class Tools(Item):
@@ -194,8 +215,6 @@ class Flashlight(Tools):
 
 
 Flashlight = Flashlight('Flashlight', 'Shines very bright in the dark')
-Flashlight.turn_on()
-Flashlight.turn_off()
 
 
 class Cloths(Item):
@@ -221,8 +240,6 @@ class Pants(Cloths):
 
 
 Pants = Pants('Pants', 'color of the pants are black')
-Pants.put_on()
-Pants.take_off()
 
 
 class Sweater(Cloths):
@@ -237,8 +254,6 @@ class Sweater(Cloths):
 
 
 Sweater = Sweater('Hoodie', 'color of the hoodie is grey')
-Sweater.put_on()
-Sweater.take_off()
 
 
 class Book(Item):
@@ -267,9 +282,6 @@ class Bookofpotions(Book):
 
 
 Bookofpotions = Bookofpotions('Book Of Potions', 'Contains many potions to do many things')
-Bookofpotions.open()
-Bookofpotions.read()
-Bookofpotions.close()
 
 
 class Bookoflegends(Book):
@@ -287,9 +299,6 @@ class Bookoflegends(Book):
 
 
 Bookoflegends = Bookoflegends('Book Of Legends', 'Contains many legends that were passed down from generations.')
-Bookoflegends.open()
-Bookoflegends.read()
-Bookoflegends.close()
 
 
 class Letters(Item):
@@ -317,8 +326,6 @@ class Sorry(Letters):
 Sorry = Sorry('Student 051603A', 'We have been informed that you have lost your magical abilities during the battle '
                                  'against the Nirads and you have requested to find a way to return your abilities. The'
                                  'head council have granted you permission to let you use the campus as needed.')
-Sorry.open()
-Sorry.read()
 
 
 class TheTree(Letters):
@@ -334,8 +341,6 @@ class TheTree(Letters):
 
 TheTree = TheTree('The Tree', 'The tree is real, they said it was not but it is real. It was not easy to find it and '
                               'journey was tough but it was worth it, if it meant getting my abilities back.')
-TheTree.open()
-TheTree.read()
 
 
 class Creations(Item):
@@ -358,7 +363,6 @@ class Crystalheart(Creations):
 
 
 Crystalheart = Crystalheart('Crystal Heart', 'A median sized crystal heart that shines very bright')
-Crystalheart.place_in()
 
 
 ####

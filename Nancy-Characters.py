@@ -34,3 +34,8 @@ class Monster(Character):
 
     def growl(self):
         print("%s growls" % self.name)
+
+
+class Principal(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Principal, self).__init__(name, description, health, attack, damage, interact)
