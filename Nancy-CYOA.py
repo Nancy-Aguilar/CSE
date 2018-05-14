@@ -26,9 +26,32 @@ def conprincipal():  # Talking with principal
     print("Principal: Bye")
 
 
-def narration():
+def narstaute():
     time.sleep(5)
     print("You: Time to get my powers back, now where should I go?")
+    time.sleep(5)
+    print("You: The Library seems like a good start")
+
+
+def narlibrary():
+    time.sleep(5)
+    print("You: Come to think about it, this is my first time in the library")
+    time.sleep(5)
+    print("You: There's a book on the floor on the east side of the library I should pick it up")
+    time.sleep(5)
+    print("You: It's a book of legends, maybe it will give me clues to get my powers back")
+    time.sleep(5)
+    print("You: *shake shake* What's going on? The shelf! It's opening? ")
+    time.sleep(5)
+    print("You: It looks like a room in there, I should go check it out")
+    time.sleep(5)
+    print("You: There's a lot of dust in here, and it looks like a letter is on the ground")
+    time.sleep(5)
+    print("You: I should go back now")
+    time.sleep(5)
+    print("You: *shake shake* The shelf is closing now")
+    time.sleep(5)
+    print("You: I should check the other shelf if there are any books that could be useful")
     time.sleep(5)
 
 
@@ -386,7 +409,7 @@ class Room(object):
 
 # north, south, east, west
 # Initialize Rooms
-STATUE = Room("Tree Statue", "You're standing next to a tree statue, it appears to missing a heart shaped object in "
+STATUE = Room("Tree Statue", "You're standing next to a tree statue, it appears to be missing a heart shaped object in "
                              "its center, up North is the Library", 'LIBRARY', None, None, None)
 LIBRARY = Room("Library", "You're inside the library, standing in the center and their are two book shelves on the "
                           "West and East side of the library, up North is Combat Training room 1", 'CT1', 'STATUE',
