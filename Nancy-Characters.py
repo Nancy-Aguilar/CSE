@@ -28,14 +28,70 @@ class Player(Character):
         print("You read %s" % self.name)
 
 
-class Monster(Character):
+class Principal(Character):
     def __init__(self, name, description, health, attack, damage, interact):
-        super(Monster, self).__init__(name, description, health, attack, damage, interact)
+        super(Principal, self).__init__(name, description, health, attack, damage, interact)
+
+
+class Monster1(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster1, self).__init__(name, description, health, attack, damage, interact)
 
     def growl(self):
         print("%s growls" % self.name)
 
 
-class Principal(Character):
+class Monster2(Character):
     def __init__(self, name, description, health, attack, damage, interact):
-        super(Principal, self).__init__(name, description, health, attack, damage, interact)
+        super(Monster2, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
+
+
+class Monster3(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster3, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
+
+
+class Monster4(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster4, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
+
+
+class Monster5(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster5, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
+
+
+class Monster6(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster6, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
+
+
+class Monster7(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster7, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)
+
+
+class Monster8(Character):
+    def __init__(self, name, description, health, attack, damage, interact):
+        super(Monster8, self).__init__(name, description, health, attack, damage, interact)
+
+    def growl(self):
+        print("%s growls" % self.name)

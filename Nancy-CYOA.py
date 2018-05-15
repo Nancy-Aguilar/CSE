@@ -1,11 +1,3 @@
-# import statements
-# class definitions
-# start with items to put in rooms
-# then with characters
-# and then finally the rooms
-# instantiate
-# controller (change controller)
-
 # Narrator = na
 import time
 
@@ -41,7 +33,7 @@ def narlibrary():
     time.sleep(5)
     print("You: It's a book of legends, maybe it will give me clues to get my powers back")
     time.sleep(5)
-    print("You: *shake shake* What's going on? The shelf! It's opening? ")
+    print("*shake shake* You: What's going on? The shelf! It's opening? ")
     time.sleep(5)
     print("You: It looks like a room in there, I should go check it out")
     time.sleep(5)
@@ -49,10 +41,28 @@ def narlibrary():
     time.sleep(5)
     print("You: I should go back now")
     time.sleep(5)
-    print("You: *shake shake* The shelf is closing now")
+    print("*shake shake* You: The shelf is closing now")
     time.sleep(5)
-    print("You: I should check the other shelf if there are any books that could be useful")
+    print("You: I should check the other shelf out, there might be books that could be useful")
     time.sleep(5)
+    print("You: *reads* All of these books are about math, english and regular class subjects, I don't need these")
+    time.sleep(5)
+    print("*shake shake* You: This shelf is opening like the other one")
+    time.sleep(5)
+    print("You: There's a room in there too, I should go in, a clue might be in there")
+    time.sleep(5)
+    print("You: This room is also very dusty and there's a book on the ground, it's a potion book")
+    time.sleep(5)
+    print("You: I should go back now")
+    time.sleep(5)
+    print("*shake shake* You: The shelf is closing now")
+    time.sleep(5)
+    print("You: I should go somewhere else now the combat training room is up ahead maybe I should go there")
+
+
+def ctrooms():
+    time.sleep(5)
+    print("You: There's nothing much in here but training equipment")
 
 
 class Item(object):
@@ -362,8 +372,9 @@ class TheTree(Letters):
         print("The letter says %s" % self.description)
 
 
-TheTree = TheTree('The Tree', 'The tree is real, they said it was not but it is real. It was not easy to find it and '
-                              'journey was tough but it was worth it, if it meant getting my abilities back.')
+TheTree = TheTree('The Tree', 'The tree is real, and this school is the key to it, the tree statue holds the key to the'
+                              'cave the weapon rooms hides, and the cave is not an easy task to get through, but it was'
+                              'worth it if it meant getting my abilities back')
 
 
 class Creations(Item):
