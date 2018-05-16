@@ -1,4 +1,3 @@
-# Narrator = na
 import time
 
 
@@ -16,11 +15,15 @@ def conprincipal():  # Talking with principal
     print("You: I won't see, you tomorrow morning then bye!")
     time.sleep(5)
     print("Principal: Bye")
+    time.sleep(5)
+    print("*The principal leaves*")
 
 
 def narstaute():
     time.sleep(5)
-    print("You: Time to get my powers back, now where should I go?")
+    print("You: *looks at the tree statue* It looks like it's missing a center piece")
+    time.sleep(5)
+    print("You: Well it's time to get my powers back, now where should I go?")
     time.sleep(5)
     print("You: The Library seems like a good start")
 
@@ -63,6 +66,52 @@ def narlibrary():
 def ctrooms():
     time.sleep(5)
     print("You: There's nothing much in here but training equipment")
+    time.sleep(5)
+    print("You: I should go somewhere else")
+
+
+def office():
+    time.sleep(5)
+    print("You: I wonder if there's something in here that I can use, hmm *sees flashlight* that might be useful")
+    time.sleep(5)
+    print("You: The Nurse's room is near here I should go check it out")
+
+
+def nurseroom():
+    time.sleep(5)
+    print("You: There's a medical kit on the desk")
+    time.sleep(5)
+    print("You: Nothing much is in here that could help I should go somewhere else")
+
+
+def loungeroom():
+    time.sleep(5)
+    print("You: *looks down* Hmm someone left a bag of carbon on the floor")
+    time.sleep(5)
+    print("You: The cafeteria is close by I should go grab a snack")
+
+
+def cafe():
+    time.sleep(5)
+    print("You: There's an apple on a table I should go grab it")
+    time.sleep(5)
+    print("You: It looks like there isn't any other food around here")
+    time.sleep(5)
+    print("You: I should go somewhere else now")
+
+
+def dorms():
+    time.sleep(5)
+    print("You: People are in here, I should be quiet")
+    time.sleep(5)
+    print("You: There isn't really anything here that would help me I should move on")
+
+
+def ptr():
+    time.sleep(5)
+    print("You: All the equipment are out, there isn't really anything here that can be useful")
+    time.sleep(5)
+    print("You: There's a station for creating things up ahead, maybe I should check it out")
 
 
 class Item(object):
