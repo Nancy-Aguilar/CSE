@@ -7,6 +7,8 @@ class Character(object):
         self.attack = attack
         self.damage = damage
         self.interact = interact
+        self.power = 0
+        self.health = 100
 
     def collect(self, item):
         self.inventory.append(item)
@@ -15,6 +17,9 @@ class Character(object):
     def remove(self, item):
         self.inventory.remove(item)
         print("You removed %s from inventory" % self.name)
+
+    def attack(self):
+        print("You attacked with %d power" % self.power)
 
 
 class Player(Character):

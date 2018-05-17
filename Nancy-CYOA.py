@@ -114,6 +114,19 @@ def ptr():
     print("You: There's a station for creating things up ahead, maybe I should check it out")
 
 
+def sfc():
+    time.sleep(5)
+    print("You: There are lots of colored potions")
+    time.sleep(5)
+    print("You: I can create something if I need to here")
+
+
+def weapon():
+    time.sleep(5)
+    print("You: There's only a sword, bow and arrow, and axe in here")
+    time.sleep(5)
+
+
 class Item(object):
     def __init__(self, name, description):
         self.name = name
