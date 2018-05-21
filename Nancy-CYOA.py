@@ -162,9 +162,6 @@ class Sword(Weapon):
         print("You cut with the %s" % self.name)
 
 
-Sword = Sword('Hinoken', 'the blade of the sword is covered in fire', 40)
-
-
 class BowArrow(Weapon):
     def __init__(self, name, description, power):
         super(BowArrow, self).__init__(name, description)
@@ -174,9 +171,6 @@ class BowArrow(Weapon):
         print("You shot an arrow with %s" % self.name)
 
 
-BowArrow = BowArrow('Seimitsuna shotto', 'shoots are always precise', 29)
-
-
 class Axe(Weapon):
     def __init__(self, name, description, power):
         super(Axe, self).__init__(name, description)
@@ -184,9 +178,6 @@ class Axe(Weapon):
 
     def swing(self):
         print("You swing the %s" % self.name)
-
-
-Axe = Axe('Ono', 'small but durable', 25)
 
 
 class Keys(Item):
@@ -201,27 +192,19 @@ class Keys(Item):
 
 
 class Blackkey(Keys):
-    def __init__(self, name, description, room):
+    def __init__(self, name, description):
         super(Blackkey, self).__init__(name, description,)
-        self.room = room
 
     def insert(self):
         print("You insert the %s" % self.name)
-
-
-Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key', 'CAVE')
 
 
 class Dormkey(Keys):
-    def __init__(self, name, description, room):
+    def __init__(self, name, description):
         super(Dormkey, self).__init__(name, description)
-        self.room = room
 
     def insert(self):
         print("You insert the %s" % self.name)
-
-
-Dormkey = Dormkey('Dorm Key', 'The key to your dorm #16', 'DORMS1')
 
 
 class Schoolkey(Keys):
@@ -230,9 +213,6 @@ class Schoolkey(Keys):
 
     def insert(self):
         print("You insert the %s" % self.name)
-
-
-Schoolkey = Schoolkey('Spare Key', 'this key can open an door on campus except the dorms')
 
 
 class Materials(Item):
@@ -249,9 +229,6 @@ class Carbon(Materials):
 
     def pressure(self):
         print("You put pressure on the %s and it turned into a diamond" % self.name)
-
-
-Carbon = Carbon('Carbon', 'A median size chunck of Carbon')
 
 
 class Consumables(Item):
@@ -273,18 +250,12 @@ class Apple(Consumables):
         print("You eat the %s" % self.name)
 
 
-Apple = Apple('Apple', 'red and delicious')
-
-
 class Medkit(Consumables):
     def __init__(self, name, description):
         super(Medkit, self).__init__(name, description)
 
     def use(self):
         print("You use the %s" % self.name)
-
-
-Medkit = Medkit('Medkit', 'Contains bandages, rubbing alcohol, and pain killers')
 
 
 class Tools(Item):
@@ -309,9 +280,6 @@ class Flashlight(Tools):
         print("You turn off the %s" % self.name)
 
 
-Flashlight = Flashlight('Flashlight', 'Shines very bright in the dark')
-
-
 class Cloths(Item):
     def __init__(self, name, description):
         super(Cloths, self).__init__(name, description)
@@ -334,9 +302,6 @@ class Pants(Cloths):
         print("You take off %s" % self.name)
 
 
-Pants = Pants('Pants', 'color of the pants are black')
-
-
 class Sweater(Cloths):
     def __init__(self, name, description):
         super(Sweater, self).__init__(name, description)
@@ -346,9 +311,6 @@ class Sweater(Cloths):
 
     def take_off(self):
         print("You take off %s" % self.name)
-
-
-Sweater = Sweater('Hoodie', 'color of the hoodie is grey')
 
 
 class Book(Item):
@@ -376,9 +338,6 @@ class Bookofpotions(Book):
         print("You close the %s" % self.name)
 
 
-Bookofpotions = Bookofpotions('Book Of Potions', 'Contains many potions to do many things')
-
-
 class Bookoflegends(Book):
     def __init__(self, name, description):
         super(Bookoflegends, self).__init__(name, description)
@@ -391,9 +350,6 @@ class Bookoflegends(Book):
 
     def close(self):
         print("You close the %s" % self.name)
-
-
-Bookoflegends = Bookoflegends('Book Of Legends', 'Contains many legends that were passed down from generations.')
 
 
 class Letters(Item):
@@ -418,11 +374,6 @@ class Sorry(Letters):
         print("The letter says %s" % self.description)
 
 
-Sorry = Sorry('Student 051603A', 'We have been informed that you have lost your magical abilities during the battle '
-                                 'against the Nirads and you have requested to find a way to return your abilities. The'
-                                 'head council have granted you permission to let you use the campus as needed.')
-
-
 class TheTree(Letters):
     def __init__(self, name, description):
         super(TheTree, self).__init__(name, description)
@@ -432,11 +383,6 @@ class TheTree(Letters):
 
     def read(self):
         print("The letter says %s" % self.description)
-
-
-TheTree = TheTree('The Tree', 'The tree is real, and this school is the key to it, the tree statue holds the key to the'
-                              'cave the weapon rooms hides, and the cave is not an easy task to get through, but it was'
-                              'worth it if it meant getting my abilities back')
 
 
 class Creations(Item):
@@ -458,26 +404,129 @@ class Crystalheart(Creations):
         print("You place the % in the tree statue" % self.name)
 
 
-Crystalheart = Crystalheart('Crystal Heart', 'A median sized crystal heart that shines very bright')
+# Character starts
+
+class Character(object):
+    def __init__(self, name, description, health, damage=10):
+        self.name = name
+        self.description = description
+        self.health = health
+        self.inventory = []
+        self.damage = damage
+        self.location = None
+        self.health = 100
+        self.alive = False
+
+    def collect(self, item):
+        self.inventory.append(item)
+        print("You collected %s" % self.name)
+
+    def remove(self, item):
+        self.inventory.remove(item)
+        print("You dropped %s" % item.name)
+
+    def eat(self, item):
+        print("%s ate the %s" % (self.name, item.name))
+
+    def health(self):
+        print(self.name.damage)
+        print("You have health")
+
+    def take_damage(self, amt):
+        if self.health <= 0:
+            print("%s is already dead" % self.name)
+            return
+        self.health -= amt
+        if self.health <= 0:
+            self.alive = False
+            print("%s has died." % self.name)
+
+    def attack(self, target):
+        if self.alive:
+            print("%s attacks %s. %s's health is %d. The enemy's health is %d." % (self.name, target.name, self.name,
+                                                                                   self.health,
+                                                                                   target.health))
+            target.take_damage(self.damage)
+        else:
+            print("%s is dead and cannot attack" % self.name)
 
 
-####
-# Characters should be placed here when finished
-####
+player = Character("Student 051603A", "You're a student attending Aurora Academy Of Magics, you lost your power, \n"
+                                      "during a battle with the Nirads, now you're determined to get them back \n",
+                   0, 100, )
+
+principal = Character("Principal", "Principal Rose helps run the school but the people who really run the school are \n"
+                      "the head councils, she's going to meet you at the statue to give you some help \n", 0, 100)
+
+nirad = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n "
+                           "are the reason your powers are gone, you over used them trying to defeat them \n", 0, 100)
+
+# Character ends
+# items in
+
+# end of items in
 
 
 class Room(object):
-    def __init__(self, name, description, north, south, east, west):
+    def __init__(self, name, north, south, east, west, up, down, northeast, northwest, southeast, description,
+                 items=None, characters=None):
+        if items is None:
+            items = []
+        if characters is None:
+            characters = []
         self.name = name
-        self.description = description
         self.north = north
         self.south = south
         self.east = east
         self.west = west
+        self.up = up
+        self.down = down
+        self.northeast = northeast
+        self.northwest = northwest
+        self.southeast = southeast
+        self.description = description
+        self.items = items
+        self.characters = characters
 
     def move(self, direction):
         global current_node
         current_node = globals()[getattr(self, direction)]
+
+Sword = Sword('Hinoken', 'the blade of the sword is covered in fire', 40)
+BowArrow = BowArrow('Seimitsuna shotto', 'shoots are always precise', 29)
+Axe = Axe('Ono', 'small but durable', 25)
+Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key')
+Dormkey = Dormkey('Dorm Key', 'The key to your dorm #16')
+Schoolkey = Schoolkey('Spare Key', 'this key can open an door on campus except the dorms')
+Carbon = Carbon('Carbon', 'A median size chunk of Carbon')
+Apple = Apple('Apple', 'red and delicious')
+Medkit = Medkit('Medkit', 'Contains bandages, rubbing alcohol, and pain killers')
+Flashlight = Flashlight('Flashlight', 'Shines very bright in the dark')
+Pants = Pants('Pants', 'color of the pants are black')
+Sweater = Sweater('Hoodie', 'color of the hoodie is grey')
+Bookofpotions = Bookofpotions('Book Of Potions', 'Contains many potions to do many things')
+Bookoflegends = Bookoflegends('Book Of Legends', 'Contains many legends that were passed down from generations')
+Sorry = Sorry('Student 051603A',
+                  'We have been informed that you have lost your magical abilities during the battle '
+                  'against the Nirads and you have requested to find a way to return your abilities. The'
+                  'head council have granted you permission to let you use the campus as needed.')
+TheTree = TheTree('The Tree',
+                      'The tree is real, and this school is the key to it, the tree statue holds the key to the'
+                      'cave the weapon rooms hides, and the cave is not an easy task to get through, but it was'
+                      'worth it if it meant getting my abilities back')
+Crystalheart = Crystalheart('Crystal Heart', 'A median sized crystal heart that shines very bright')
+
+player = Character("Student 051603A", "You're a student attending Aurora Academy Of Magics, you lost your power, \n"
+                                          "during a battle with the Nirads, now you're determined to get them back \n",
+                       0, 100, )
+
+principal = Character("Principal",
+                          "Principal Rose helps run the school but the people who really run the school are \n"
+                          "the head councils, she's going to meet you at the statue to give you some help \n", 0, 100)
+
+nirad = Character("Nirad",
+                      "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n "
+                      "are the reason your powers are gone, you over used them trying to defeat them \n", 0, 100)
 
 
 # north, south, east, west
