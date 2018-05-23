@@ -387,12 +387,12 @@ class Character(object):
         self.health = health
         self.inventory = [Dormkey, Sorry, Schoolkey]
         self.damage = damage
-        self.health = 100
-        self.alive = False
+        self.health = health
+        self.alive = True
 
-    def collect(self, item):
-        self.inventory.append(item)
-        print("You collected %s" % self.name)
+    def collect(self, item1):
+        self.inventory.append(item1)
+        print("You collected %s" % item1.name)
 
     def remove(self, item):
         self.inventory.remove(item)
@@ -403,25 +403,20 @@ class Character(object):
 
     def health(self):
         print(self.name.damage)
-        print("You have health")
+        print("You have %s health" % self.health)
 
     def take_damage(self, amt):
-        if self.health <= 0:
-            print("%s is already dead" % self.name)
-            return
-        self.health -= amt
-        if self.health <= 0:
-            self.alive = False
-            print("%s has died." % self.name)
+        if self.alive <= 0:
+            print("You're dead" % self.name)
 
-    def attack(self, target):
+        self.health -= amt
+        if self.alive <= 0:
+            self.alive = False
+        print("You're dead")
+
+    def attack(self):
         if self.alive:
-            print("%s attacks %s. %s's health is %d. The enemy's health is %d." % (self.name, target.name, self.name,
-                                                                                   self.health,
-                                                                                   target.health))
-            target.take_damage(self.damage)
-        else:
-            print("%s is dead and cannot attack" % self.name)
+            print("You attacked the Nirad with %s and %s power" % self.name, self.power)
 
 
 player = Character("Student 051603A", "You're a student attending Aurora Academy Of Magics, you lost your power, \n"
@@ -459,11 +454,7 @@ nirad8 = Character("Nirad", "A Nirad is a four armed monster that seems almost i
 
 
 class Room(object):
-    def __init__(self, name, description, north, south, east, west, items=None, characters=None):
-        if items is None:
-            items = []
-        if characters is None:
-            characters = []
+    def __init__(self, name, description, north, south, east, west, items, characters):
         self.name = name
         self.description = description
         self.north = north
@@ -474,15 +465,14 @@ class Room(object):
         self.characters = characters
 
     def move(self, direction):
-        global current_node
-        current_node = globals()[getattr(self, direction)]
+        player.location = globals()[getattr(self, direction)]
 
 
-Sword = Sword('Hinoken', 'the blade of the sword is covered in fire', 40)
+Sword = Sword('sword', 'the blade of the sword is covered in fire', 40)
 
-BowArrow = BowArrow('Seimitsuna shotto', 'shoots are always precise', 29)
+BowArrow = BowArrow('bow and arrow', 'shoots are always precise', 29)
 
-Axe = Axe('Ono', 'small but durable', 25)
+Axe = Axe('axe', 'small but durable', 25)
 
 Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key')
 
@@ -560,8 +550,8 @@ DORMS3 = Room("Dorms for 3rd years", "You're inside a dorm building, all the roo
 DORMS4 = Room("Dorms for 4th years", "You're inside a dorm building, all the rooms are closed and facing North is "
                                      "the power training room", 'PTR', 'DORMS3', None, None, None, [player])
 PTR = Room("Power Training Room", "You're in the power training room and their's a station for creating items up "
-                                  "North and facing East is the weapon room", 'CREATION', 'DORMS4', 'WEAPON', None, None
-           [player])
+                                  "North and facing East is the weapon room", 'CREATION', 'DORMS4', 'WEAPON', None,
+           None, [player])
 CREATION = Room("Creation Table", "You're standing in front of a table that has a crystal heart on top of it", None,
                 'DORMS4', 'WEAPON', None, None, [player])
 WEAPON = Room("Weapon Room", "You're inside the weapon room, there's a sword and bow/arrow on a table and there is an "
@@ -571,7 +561,7 @@ CLASS = Room("Classroom", "You're inside the classrooms and all the rooms are lo
              'WEAPON', 'CT4', None, None, None, [player])
 CP1 = Room("Cave Place #1", "You're inside the cave and people say that there are many dangerous things inside and "
                             "multiple places in the cave, there's a light leading South and East", None, 'CP7', 'CP2',
-           'WEAPON', None [player])
+           'WEAPON', None, [player])
 CP2 = Room("Cave PLace #2", "There's nothing here but a light leading East, South, and West", None, 'CP8', 'CP3',
            'CP1', None, [player, nirad1])
 CP3 = Room("Cave PLace #3", "There's nothing here but a light leading East, South, and West", None, 'CP6', 'CP4',
@@ -603,15 +593,14 @@ CP15 = Room("Cave PLace #15", "There's nothing here but a light leading North an
 TREE = Room("Crystal Heart Tree", "You're standing in front of a big light tree and in its center it has a crystal "
                                   "heart", None, 'CP13', None, None, None, [player])
 
-current_node = STATUE
+player.location = STATUE
 directions = ['north', 'south', 'east', 'west']
 short_directions = ['n', 's', 'e', 'w']
-inventory = ['inventory']
-character = ['character']
+
 
 while True:
-    print(current_node.name)
-    print(current_node.description)
+    print(player.location.name)
+    print(player.location.description)
     command = input('>_').lower()
     if command == 'quit':
         quit(0)
@@ -620,8 +609,31 @@ while True:
         command = directions[pos]
     if command in directions:
         try:
-            current_node.move(command)
+            player.location.move(command)
         except KeyError:
             print("You cannot go this way")
+
+    elif 'collect' in command:
+        collect_name = command[8:]
+        found = None
+        for item in player.location.items:
+            if collect_name == item.name.lower():
+                player.collect(item)
+                found = item
+        if found is None:
+            print("There isn't anything to collect")
+        else:
+            player.location.items.remove(found)
+
+    elif 'drop' in command:
+        drop_name = command[5:]
+        drop = None
+        for item in player.inventory:
+            if drop_name == item.name.lower():
+                player.remove(item)
+                player.location.items.append(item)
+                drop = item
+
+
     else:
         print('Command not recognized')
