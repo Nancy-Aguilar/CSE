@@ -6,9 +6,9 @@ def conprincipal():  # Talking with principal
     time.sleep(5)
     print("You: Yeah, it would of been bad if you left, then I wouldn't be able to go anywhere around campus")
     time.sleep(5)
-    print("Principal: That's true, here is my spare key, now don't lose it and bring it to me tomorrow morning")
+    print("Principal: That's true, here is my spare card, now don't lose it and bring it to me tomorrow morning")
     time.sleep(5)
-    print("You: Ok I will, thanks for lending me your key this will really help me a lot")
+    print("You: Ok I will, thanks for lending me your card this will really help me a lot")
     time.sleep(5)
     print("Principal: Your welcome and don't ruin the campus, we have school tomorrow")
     time.sleep(5)
@@ -54,7 +54,7 @@ def narlibrary():
     time.sleep(5)
     print("You: There's a room in there too, I should go in, a clue might be in there")
     time.sleep(5)
-    print("You: This room is also very dusty and there's a book on the ground, it's a potion book")
+    print("You: This room is also very dusty and there's nothing in here")
     time.sleep(5)
     print("You: I should go back now")
     time.sleep(5)
@@ -86,7 +86,7 @@ def nurseroom():
 
 def loungeroom():
     time.sleep(5)
-    print("You: *looks down* Hmm someone left a bag of carbon on the floor")
+    print("You: There's nothing much in here just chairs and tables")
     time.sleep(5)
     print("You: The cafeteria is close by I should go grab a snack")
 
@@ -116,9 +116,9 @@ def ptr():
 
 def sfc():
     time.sleep(5)
-    print("You: There are lots of colored potions")
+    print("You: There's a crystal heart on the table")
     time.sleep(5)
-    print("You: I can create something if I need to here")
+    print("You: It looks like someone created it")
 
 
 def weapon():
@@ -128,6 +128,8 @@ def weapon():
 
 
 class Item(object):
+    inventory = []
+
     def __init__(self, name, description):
         self.name = name
         self.description = description
@@ -213,22 +215,6 @@ class Schoolkey(Keys):
 
     def insert(self):
         print("You insert the %s" % self.name)
-
-
-class Materials(Item):
-    def __init__(self, name, description):
-        super(Materials, self).__init__(name, description)
-
-    def collect(self):
-        print(" You collected %s" % self.name)
-
-
-class Carbon(Materials):
-    def __init__(self, name, description):
-        super(Carbon, self).__init__(name, description)
-
-    def pressure(self):
-        print("You put pressure on the %s and it turned into a diamond" % self.name)
 
 
 class Consumables(Item):
@@ -324,20 +310,6 @@ class Book(Item):
         print("You dropped %s" % self.name)
 
 
-class Bookofpotions(Book):
-    def __init__(self, name, description):
-        super(Bookofpotions, self).__init__(name, description)
-
-    def open(self):
-        print("You opened the %s" % self.name)
-
-    def read(self):
-        print("The book says %s" % self.description)
-
-    def close(self):
-        print("You close the %s" % self.name)
-
-
 class Bookoflegends(Book):
     def __init__(self, name, description):
         super(Bookoflegends, self).__init__(name, description)
@@ -407,13 +379,14 @@ class Crystalheart(Creations):
 # Character starts
 
 class Character(object):
-    def __init__(self, name, description, health, damage=10):
+    character = []
+
+    def __init__(self, name, description, health, damage):
         self.name = name
         self.description = description
         self.health = health
-        self.inventory = []
+        self.inventory = [Dormkey, Sorry, Schoolkey]
         self.damage = damage
-        self.location = None
         self.health = 100
         self.alive = False
 
@@ -452,39 +425,51 @@ class Character(object):
 
 
 player = Character("Student 051603A", "You're a student attending Aurora Academy Of Magics, you lost your power, \n"
-                                      "during a battle with the Nirads, now you're determined to get them back \n",
-                   0, 100, )
+                                      "during a battle with the Nirads, now you're determined to get them back \n", 100,
+                   0)
 
 principal = Character("Principal", "Principal Rose helps run the school but the people who really run the school are \n"
-                      "the head councils, she's going to meet you at the statue to give you some help \n", 0, 100)
+                      "the head councils, she's going to meet you at the statue to give you some help \n", 100, 100)
 
-nirad = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n "
-                           "are the reason your powers are gone, you over used them trying to defeat them \n", 0, 100)
+nirad1 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad2 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad3 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad4 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad5 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad6 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad7 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
+
+nirad8 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
+                            "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
 
 # Character ends
-# items in
-
-# end of items in
 
 
 class Room(object):
-    def __init__(self, name, north, south, east, west, up, down, northeast, northwest, southeast, description,
-                 items=None, characters=None):
+    def __init__(self, name, description, north, south, east, west, items=None, characters=None):
         if items is None:
             items = []
         if characters is None:
             characters = []
         self.name = name
+        self.description = description
         self.north = north
         self.south = south
         self.east = east
         self.west = west
-        self.up = up
-        self.down = down
-        self.northeast = northeast
-        self.northwest = northwest
-        self.southeast = southeast
-        self.description = description
         self.items = items
         self.characters = characters
 
@@ -492,129 +477,137 @@ class Room(object):
         global current_node
         current_node = globals()[getattr(self, direction)]
 
+
 Sword = Sword('Hinoken', 'the blade of the sword is covered in fire', 40)
+
 BowArrow = BowArrow('Seimitsuna shotto', 'shoots are always precise', 29)
+
 Axe = Axe('Ono', 'small but durable', 25)
+
 Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key')
+
 Dormkey = Dormkey('Dorm Key', 'The key to your dorm #16')
+
 Schoolkey = Schoolkey('Spare Key', 'this key can open an door on campus except the dorms')
-Carbon = Carbon('Carbon', 'A median size chunk of Carbon')
+
 Apple = Apple('Apple', 'red and delicious')
+
 Medkit = Medkit('Medkit', 'Contains bandages, rubbing alcohol, and pain killers')
+
 Flashlight = Flashlight('Flashlight', 'Shines very bright in the dark')
+
 Pants = Pants('Pants', 'color of the pants are black')
+
 Sweater = Sweater('Hoodie', 'color of the hoodie is grey')
-Bookofpotions = Bookofpotions('Book Of Potions', 'Contains many potions to do many things')
+
 Bookoflegends = Bookoflegends('Book Of Legends', 'Contains many legends that were passed down from generations')
-Sorry = Sorry('Student 051603A',
-                  'We have been informed that you have lost your magical abilities during the battle '
-                  'against the Nirads and you have requested to find a way to return your abilities. The'
-                  'head council have granted you permission to let you use the campus as needed.')
-TheTree = TheTree('The Tree',
-                      'The tree is real, and this school is the key to it, the tree statue holds the key to the'
-                      'cave the weapon rooms hides, and the cave is not an easy task to get through, but it was'
-                      'worth it if it meant getting my abilities back')
+
+Sorry = Sorry('Student 051603A', 'We have been informed that you have lost your magical abilities during the battle '
+                                 'against the Nirads and you have requested to find a way to return your abilities. The'
+                                 'head council have granted you permission to let you use the campus as needed.')
+
+TheTree = TheTree('The Tree', 'The tree is real, and this school is the key to it, the tree statue holds the key to the'
+                              'cave the weapon rooms hides, and the cave is not an easy task to get through, but it was'
+                              'worth it if it meant getting my abilities back')
+
 Crystalheart = Crystalheart('Crystal Heart', 'A median sized crystal heart that shines very bright')
 
-player = Character("Student 051603A", "You're a student attending Aurora Academy Of Magics, you lost your power, \n"
-                                          "during a battle with the Nirads, now you're determined to get them back \n",
-                       0, 100, )
 
-principal = Character("Principal",
-                          "Principal Rose helps run the school but the people who really run the school are \n"
-                          "the head councils, she's going to meet you at the statue to give you some help \n", 0, 100)
-
-nirad = Character("Nirad",
-                      "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n "
-                      "are the reason your powers are gone, you over used them trying to defeat them \n", 0, 100)
-
-
-# north, south, east, west
+# north, south, east, west, items, characters
 # Initialize Rooms
 STATUE = Room("Tree Statue", "You're standing next to a tree statue, it appears to be missing a heart shaped object in "
-                             "its center, up North is the Library", 'LIBRARY', None, None, None)
+                             "its center, up North is the Library", 'LIBRARY', None, None, None, [Schoolkey],
+              [player, principal])
 LIBRARY = Room("Library", "You're inside the library, standing in the center and their are two book shelves on the "
                           "West and East side of the library, up North is Combat Training room 1", 'CT1', 'STATUE',
-               'BSE2', 'BSE1')
+               'BSE2', 'BSE1', None, [player])
 BSE1 = Room("Book shelves", "You approached the book shelves and they suddenly moved to reveal a secret room", None,
-            None, 'LIBRARY', 'SECRET1')
+            None, 'LIBRARY', 'SECRET1', None, [player])
 BSE2 = Room("Book shelves", "You approached the book shelves and they suddenly moved to reveal a secret room", None,
-            None, 'SECRET2', 'LIBRARY')
+            None, 'SECRET2', 'LIBRARY', [Bookoflegends], [player])
 SECRET1 = Room("Secret Room #1", "You're inside a secret room and the only thing in there is a dusty old book on the "
-                                 "ground", None, None, 'BSE1', None)
+                                 "ground", None, None, 'BSE1', None, None, [player])
 SECRET2 = Room("Secret Room #2", "You're inside a secret room and the only thing in there is letter on the ground",
-               None, None, None, 'BSE2')
+               None, None, None, 'BSE2', [TheTree], [player])
 CT1 = Room("Combat Training Room #1", "You're inside the training room for 1st years, facing West is the training room "
                                       "for 3rd years, facing East is the training room for 2nd years, and North is the "
-                                      "training room for 4th years", 'CT4', 'LIBRARY', 'CT2', 'CT3')
+                                      "training room for 4th years", 'CT4', 'LIBRARY', 'CT2', 'CT3', None, [player])
 CT2 = Room("Combat Training Room #2", "You're inside the combat training room for 2nd years, on the East side is the "
                                       "office and on the West side is the combat training room for 1st years", None,
-           None, 'OFFICE', 'CT1')
+           None, 'OFFICE', 'CT1', None, [player])
 CT3 = Room("Combat Training Room #3", "You're inside the combat training room for 3rd years, on the East side is the "
                                       "combat training room for 1st years, on the West side are the dorms for 1st "
-                                      "years", None, None, 'CT1', 'DORMS1')
+                                      "years", None, None, 'CT1', 'DORMS1', None, [player])
 CT4 = Room("Combat Training Room #4", "You're inside the combat training room for 4th years and up North are the "
-                                      "classrooms", 'CLASS', 'CT1', None, None)
+                                      "classrooms", 'CLASS', 'CT1', None, None, None, [player])
 OFFICE = Room("Office", "You're inside the office and facing East is the Nurse's room and facing West is the training "
-                        "room for 2nd years", None, None, 'NURSE', 'CT2')
+                        "room for 2nd years", None, None, 'NURSE', 'CT2', [Flashlight], [player])
 NURSE = Room("Nurse's Room", "You're inside the Nurse's room and facing East is the Nurse's room and facing North is "
-                             "the lounge room and facing West is the office", 'LOUNGE', None, None, 'OFFICE')
+                             "the lounge room and facing West is the office", 'LOUNGE', None, None, 'OFFICE', [Medkit],
+             [player])
 LOUNGE = Room("Lounge Room", "You're at the lounge room and there is a bag of carbon on a sofa, facing West is the "
-                             "Cafeteria", None, 'NURSE', None, 'CAFE')
+                             "Cafeteria", None, 'NURSE', None, 'CAFE', None, [player])
 CAFE = Room("Cafeteria", "You're inside the Cafeteria with many tables and chairs and some food trays. Facing East is "
-                         "the lounge room", None, None, 'LOUNGE', None)
+                         "the lounge room", None, None, 'LOUNGE', None, [Apple], [player])
 DORMS1 = Room("Dorms for 1st years", "You're inside a dorm building, all the rooms are closed and facing North are "
-                                     "the 2nd year dorms", 'DORMS2', None, 'CT3', None)
+                                     "the 2nd year dorms", 'DORMS2', None, 'CT3', None, None, [player])
 
 DORMS2 = Room("Dorms for 2nd years", "You're inside a dorm building, all the rooms are closed and facing North are "
-                                     "the 3rd year dorms", 'DORMS3', 'DORMS1', None, None)
+                                     "the 3rd year dorms", 'DORMS3', 'DORMS1', None, None, None, [player])
 DORMS3 = Room("Dorms for 3rd years", "You're inside a dorm building, all the rooms are closed and facing North are "
-                                     "the 4th year dorms", 'DORMS4', 'DORMS2', None, None)
+                                     "the 4th year dorms", 'DORMS4', 'DORMS2', None, None, None, [player])
 
 DORMS4 = Room("Dorms for 4th years", "You're inside a dorm building, all the rooms are closed and facing North is "
-                                     "the power training room", 'PTR', 'DORMS3', None, None)
+                                     "the power training room", 'PTR', 'DORMS3', None, None, None, [player])
 PTR = Room("Power Training Room", "You're in the power training room and their's a station for creating items up "
-                                  "North and facing East is the weapon room", 'CREATION', 'DORMS4', 'WEAPON', None)
-CREATION = Room("Creation Table", "You're standing in front of a table that has four potions, you can create anything "
-                                  "you want with the right materials, facing East is the weapon room", None, 'DORMS4',
-                'WEAPON', None)
+                                  "North and facing East is the weapon room", 'CREATION', 'DORMS4', 'WEAPON', None, None
+           [player])
+CREATION = Room("Creation Table", "You're standing in front of a table that has a crystal heart on top of it", None,
+                'DORMS4', 'WEAPON', None, None, [player])
 WEAPON = Room("Weapon Room", "You're inside the weapon room, there's a sword and bow/arrow on a table and there is an "
                              "entrance to a cave but it's locked and facing South are the classrooms", None, 'CLASS',
-              'CP1', 'PTR')
+              'CP1', 'PTR', [Sword, BowArrow, Axe], [player])
 CLASS = Room("Classroom", "You're inside the classrooms and all the rooms are locked, facing North is the weapon room",
-             'WEAPON', 'CT4', None, None)
+             'WEAPON', 'CT4', None, None, None, [player])
 CP1 = Room("Cave Place #1", "You're inside the cave and people say that there are many dangerous things inside and "
                             "multiple places in the cave, there's a light leading South and East", None, 'CP7', 'CP2',
-           'WEAPON')
+           'WEAPON', None [player])
 CP2 = Room("Cave PLace #2", "There's nothing here but a light leading East, South, and West", None, 'CP8', 'CP3',
-           'CP1')
+           'CP1', None, [player, nirad1])
 CP3 = Room("Cave PLace #3", "There's nothing here but a light leading East, South, and West", None, 'CP6', 'CP4',
-           'CP2')
-CP4 = Room("Cave PLace #4", "There's nothing here but a light leading East, South, and West", None, 'CP9', 'CP5', 'CP3')
-CP5 = Room("Cave PLace #5", "There's nothing here but a light leading South and West", None, 'CP10', None, 'CP4')
-CP6 = Room("Cave PLace #6", "There's nothing here but a light leading North", 'CP3', None, None, None)
+           'CP2', None, [player])
+CP4 = Room("Cave PLace #4", "There's nothing here but a light leading East, South, and West", None, 'CP9', 'CP5', 'CP3',
+           None, [player])
+CP5 = Room("Cave PLace #5", "There's nothing here but a light leading South and West", None, 'CP10', None, 'CP4', None,
+           [player, nirad2])
+CP6 = Room("Cave PLace #6", "There's nothing here but a light leading North", 'CP3', None, None, None, None,
+           [player, nirad3])
 CP7 = Room("Cave PLace #7", "There's nothing here but a light leading North, South, and East", 'CP1', 'CP11', 'CP8',
-           None)
+           None, None, [player])
 CP8 = Room("Cave PLace #8", "There's nothing here but a light leading North, South, and West", 'CP2', 'CP12', None,
-           'CP7')
+           'CP7', None, [player, nirad4])
 CP9 = Room("Cave PLace #9", "There's nothing here but a light leading North, South, and East", 'CP4', 'CP14', 'CP10',
-           None)
+           None, None, [player, nirad5])
 CP10 = Room("Cave PLace #10", "There's nothing here but a light leading North, South, and West", 'CP5', 'CP15', None,
-            'CP9')
-CP11 = Room("Cave PLace #11", "There's nothing here but a light leading North and East", 'CP7', None, 'CP12', None)
+            'CP9', None, [player])
+CP11 = Room("Cave PLace #11", "There's nothing here but a light leading North and East", 'CP7', None, 'CP12', None,
+            None, [player, nirad6])
 CP12 = Room("Cave PLace #12", "There's nothing here but a light leading North, East, and West", 'CP8', None, 'CP13',
-            'CP11')
+            'CP11', None, [player])
 CP13 = Room("Cave PLace #13", "There's nothing here but a light leading North, East, and West", 'TREE', None, 'CP14',
-            'CP12')
+            'CP12', None, [player, nirad7])
 CP14 = Room("Cave PLace #14", "There's nothing here but a light leading North, East, and West", 'CP9', None, 'CP15',
-            'CP13')
-CP15 = Room("Cave PLace #15", "There's nothing here but a light leading North and West", 'CP10', None, None, 'CP14')
+            'CP13', None, [player])
+CP15 = Room("Cave PLace #15", "There's nothing here but a light leading North and West", 'CP10', None, None, 'CP14',
+            None, [player, nirad8])
 TREE = Room("Crystal Heart Tree", "You're standing in front of a big light tree and in its center it has a crystal "
-                                  "heart", None, 'CP13', None, None)
+                                  "heart", None, 'CP13', None, None, None, [player])
 
 current_node = STATUE
 directions = ['north', 'south', 'east', 'west']
 short_directions = ['n', 's', 'e', 'w']
+inventory = ['inventory']
+character = ['character']
 
 while True:
     print(current_node.name)

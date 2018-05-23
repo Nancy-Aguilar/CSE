@@ -1,4 +1,6 @@
 class Character(object):
+    character = []
+
     def __init__(self, name, description, health, damage=10):
         self.name = name
         self.description = description
