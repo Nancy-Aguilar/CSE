@@ -123,7 +123,7 @@ def sfc():
 
 def weapon():
     time.sleep(5)
-    print("You: There's only a sword, bow and arrow, and axe in here")
+    print("You: There's only a sword and a bow and arrow in here")
     time.sleep(5)
 
 
@@ -173,15 +173,6 @@ class BowArrow(Weapon):
         print("You shot an arrow with %s" % self.name)
 
 
-class Axe(Weapon):
-    def __init__(self, name, description, power):
-        super(Axe, self).__init__(name, description)
-        self.power = power
-
-    def swing(self):
-        print("You swing the %s" % self.name)
-
-
 class Keys(Item):
     def __init__(self, name, description):
         super(Keys, self).__init__(name, description)
@@ -195,7 +186,7 @@ class Keys(Item):
 
 class Blackkey(Keys):
     def __init__(self, name, description):
-        super(Blackkey, self).__init__(name, description,)
+        super(Blackkey, self).__init__(name, description, )
 
     def insert(self):
         print("You insert the %s" % self.name)
@@ -385,38 +376,58 @@ class Character(object):
         self.name = name
         self.description = description
         self.health = health
-        self.inventory = [Dormkey, Sorry, Schoolkey]
+        self.inventory = []
         self.damage = damage
         self.health = health
         self.alive = True
 
     def collect(self, item1):
         self.inventory.append(item1)
-        print("You collected %s" % item1.name)
+        print("You collected the %s" % item1.name)
 
-    def remove(self, item):
-        self.inventory.remove(item)
-        print("You dropped %s" % item.name)
+    def remove(self, item2):
+        self.inventory.remove(item2)
+        print("You removed the %s" % item2.name)
 
-    def eat(self, item):
-        print("%s ate the %s" % (self.name, item.name))
+    def eat(self, apple):
+        print("You ate the %s" % apple.name)
+
+    def put(self, crystalheart):
+        print("You put the %s in the statue" % crystalheart.name)
+
+    def touch(self):
+        print("You touch the tree and get your powers back")
 
     def health(self):
         print(self.name.damage)
         print("You have %s health" % self.health)
 
+    def cut(self, nirad11):
+        print("You cut the %s" % nirad11.name)
+
+    def shoot(self):
+        print("You shoot %s" % self.name)
+
     def take_damage(self, amt):
-        if self.alive <= 0:
-            print("You're dead" % self.name)
+        if self.health <= 0:
+            print("You're dead")
 
         self.health -= amt
-        if self.alive <= 0:
-            self.alive = False
-        print("You're dead")
+        if self.health >= 0:
+            self.alive = True
+        else:
+            if self.health <= 0:
+                self.alive = False
+                print("You are dead")
 
-    def attack(self):
+    def attack(self, target):
         if self.alive:
-            print("You attacked the Nirad with %s and %s power" % self.name, self.power)
+            print("You attack the %s. Your health is %d. The Nirad's health is %d." % (target.name, self.health,
+                                                                                       target.health))
+
+            target.take_damage(self.damage)
+        else:
+            print("%s is dead and cannot attack" % self.name)
 
 
 player = Character("Student 051603A", "You're a student attending Aurora Academy Of Magics, you lost your power, \n"
@@ -424,7 +435,8 @@ player = Character("Student 051603A", "You're a student attending Aurora Academy
                    0)
 
 principal = Character("Principal", "Principal Rose helps run the school but the people who really run the school are \n"
-                      "the head councils, she's going to meet you at the statue to give you some help \n", 100, 100)
+                                   "the head councils, she's going to meet you at the statue to give you some help \n",
+                      100, 100)
 
 nirad1 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
                             "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
@@ -450,6 +462,7 @@ nirad7 = Character("Nirad", "A Nirad is a four armed monster that seems almost i
 nirad8 = Character("Nirad", "A Nirad is a four armed monster that seems almost impossible to beat, these creatures \n"
                             "are the reason your powers are gone, you over used them trying to defeat them \n", 100, 0)
 
+
 # Character ends
 
 
@@ -472,36 +485,35 @@ Sword = Sword('sword', 'the blade of the sword is covered in fire', 40)
 
 BowArrow = BowArrow('bow and arrow', 'shoots are always precise', 29)
 
-Axe = Axe('axe', 'small but durable', 25)
+Blackkey = Blackkey('black Key', 'Their are some words engraved on the key')
 
-Blackkey = Blackkey('Black Key', 'Their are some words engraved on the key')
+Dormkey = Dormkey('dorm Key', 'The key to your dorm #16')
 
-Dormkey = Dormkey('Dorm Key', 'The key to your dorm #16')
+Schoolkey = Schoolkey('spare Key', 'this key can open an door on campus except the dorms')
 
-Schoolkey = Schoolkey('Spare Key', 'this key can open an door on campus except the dorms')
+Apple = Apple('apple', 'red and delicious')
 
-Apple = Apple('Apple', 'red and delicious')
+Medkit = Medkit('medkit', 'Contains bandages, rubbing alcohol, and pain killers')
 
-Medkit = Medkit('Medkit', 'Contains bandages, rubbing alcohol, and pain killers')
+Flashlight = Flashlight('flashlight', 'Shines very bright in the dark')
 
-Flashlight = Flashlight('Flashlight', 'Shines very bright in the dark')
+Pants = Pants('pants', 'color of the pants are black')
 
-Pants = Pants('Pants', 'color of the pants are black')
+Sweater = Sweater('hoodie', 'color of the hoodie is grey')
 
-Sweater = Sweater('Hoodie', 'color of the hoodie is grey')
+Bookoflegends = Bookoflegends('Book Of Legends', 'Legend says that there is a special tree hidden within a cave, it is'
+                                                 'the source of magic, and those who have lost their powers can get \n '
+                                                 'them back.')
 
-Bookoflegends = Bookoflegends('Book Of Legends', 'Contains many legends that were passed down from generations')
-
-Sorry = Sorry('Student 051603A', 'We have been informed that you have lost your magical abilities during the battle '
+Sorry = Sorry('Student 051603A', 'We have been informed that you have lost your magical abilities during the battle \n'
                                  'against the Nirads and you have requested to find a way to return your abilities. The'
                                  'head council have granted you permission to let you use the campus as needed.')
 
-TheTree = TheTree('The Tree', 'The tree is real, and this school is the key to it, the tree statue holds the key to the'
-                              'cave the weapon rooms hides, and the cave is not an easy task to get through, but it was'
-                              'worth it if it meant getting my abilities back')
+TheTree = TheTree('letter', 'The tree is real, and this school is the key to it, the tree statue holds the key to \n '
+                            'the cave the weapon rooms hides, and the cave is not an easy task to get through, but it'
+                            'was worth it if it meant getting my abilities back')
 
-Crystalheart = Crystalheart('Crystal Heart', 'A median sized crystal heart that shines very bright')
-
+Crystalheart = Crystalheart('crystal heart', 'A median sized crystal heart that shines very bright')
 
 # north, south, east, west, items, characters
 # Initialize Rooms
@@ -553,10 +565,10 @@ PTR = Room("Power Training Room", "You're in the power training room and their's
                                   "North and facing East is the weapon room", 'CREATION', 'DORMS4', 'WEAPON', None,
            None, [player])
 CREATION = Room("Creation Table", "You're standing in front of a table that has a crystal heart on top of it", None,
-                'DORMS4', 'WEAPON', None, None, [player])
+                'DORMS4', 'WEAPON', None, [Crystalheart], [player])
 WEAPON = Room("Weapon Room", "You're inside the weapon room, there's a sword and bow/arrow on a table and there is an "
                              "entrance to a cave but it's locked and facing South are the classrooms", None, 'CLASS',
-              'CP1', 'PTR', [Sword, BowArrow, Axe], [player])
+              'CP1', 'PTR', [Sword, BowArrow], [player])
 CLASS = Room("Classroom", "You're inside the classrooms and all the rooms are locked, facing North is the weapon room",
              'WEAPON', 'CT4', None, None, None, [player])
 CP1 = Room("Cave Place #1", "You're inside the cave and people say that there are many dangerous things inside and "
@@ -597,7 +609,6 @@ player.location = STATUE
 directions = ['north', 'south', 'east', 'west']
 short_directions = ['n', 's', 'e', 'w']
 
-
 while True:
     print(player.location.name)
     print(player.location.description)
@@ -625,15 +636,63 @@ while True:
         else:
             player.location.items.remove(found)
 
-    elif 'drop' in command:
-        drop_name = command[5:]
-        drop = None
+    elif 'remove' in command:
+        remove_name = command[7:]
+        remove = None
         for item in player.inventory:
-            if drop_name == item.name.lower():
+            if remove_name == item.name.lower():
                 player.remove(item)
                 player.location.items.append(item)
                 drop = item
 
+    elif 'cut' in command:
+        if Sword in player.inventory:
+            player.cut(nirad1)
+        else:
+            print("You don't have a weapon in your inventory")
+
+    elif 'eat' in command:
+        eat_name = command[4:]
+        if Apple in player.inventory:
+            if eat_name == item.name.lower():
+                player.eat(Apple)
+                player.inventory.append(item)
+        else:
+            print("You have nothing to eat")
+
+    elif 'attack' in command:
+        if Sword in player.inventory:
+            player.attack(target=nirad1)
+            if BowArrow in player.inventory:
+                player.attack(target=nirad1)
+        else:
+            print("You have no weapon to attack with")
+
+    elif 'put' in command:
+        if player.location == STATUE and Crystalheart in player.inventory:
+            player.put(Crystalheart)
+            player.inventory.append(Blackkey)
+            print("You collected the Black key")
+        else:
+            print("You have nothing to put")
+
+    elif 'touch' in command:
+        if player.location == TREE:
+            player.touch()
+            print("You did it, now you can go to school with your abilities back :)")
+            quit()
+
+    elif 'read book' in command:
+        if Bookoflegends in player.inventory:
+            print(Bookoflegends.description)
+        else:
+            print("You have nothing to read")
+
+    elif 'read letter' in command:
+        if TheTree in player.inventory:
+            print(TheTree.description)
+        else:
+            print("You have nothing to read")
 
     else:
         print('Command not recognized')
